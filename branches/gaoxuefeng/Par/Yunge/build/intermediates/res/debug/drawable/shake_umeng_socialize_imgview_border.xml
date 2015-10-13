@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <stroke
-        android:width="10dp"
-        android:color="#2A5295" />
-
-</shape><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/social_sdk_library_project/res/drawable/shake_umeng_socialize_imgview_border.xml --><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/build/intermediates/exploded-aar/Par/social_sdk_library_project/unspecified/res/drawable/shake_umeng_socialize_imgview_border.xml -->

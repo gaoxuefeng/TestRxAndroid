@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_shortAnimTime">
-
-    <item android:state_pressed="true" android:drawable="@drawable/cube_material_card_nos_pressed" />
-    <item android:state_focused="true" android:drawable="@drawable/cube_material_card_nos_pressed" />
-    <item android:drawable="@drawable/cube_material_card_nos" />
-
-</selector>
-<!-- From: file:/C:/Users/dddd/Desktop/cube-sdk-master/core/res/drawable/cube_dialog_button.xml --><!-- From: file:/C:/Users/dddd/Desktop/cube-sdk-master/core/build/intermediates/bundles/debug/res/drawable/cube_dialog_button.xml -->

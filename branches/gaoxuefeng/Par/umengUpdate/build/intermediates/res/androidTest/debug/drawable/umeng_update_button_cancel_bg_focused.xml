@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <gradient
-        android:angle="90"
-        android:endColor="#222126"
-        android:startColor="#222126" />
-
-</shape><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/umengUpdate/src/main/res/drawable/umeng_update_button_cancel_bg_focused.xml --><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/umengUpdate/build/intermediates/bundles/debug/res/drawable/umeng_update_button_cancel_bg_focused.xml -->

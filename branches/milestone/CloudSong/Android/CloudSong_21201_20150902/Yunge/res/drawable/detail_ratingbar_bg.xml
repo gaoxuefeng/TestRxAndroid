@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:id="@android:id/background" android:drawable="@drawable/schedule_no_start_icon"/>
-	<item android:id="@android:id/secondaryProgress" android:drawable="@drawable/schedule_half_start_icon"/>
-	<item android:id="@android:id/progress" android:drawable="@drawable/schedule_full_start_icon" />
-</layer-list>

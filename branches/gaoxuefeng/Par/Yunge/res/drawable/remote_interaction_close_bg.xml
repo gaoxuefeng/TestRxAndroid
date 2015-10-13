@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/remote_interaction_close_bg2" android:state_pressed="true"/>
-    <!-- pressed -->
-    <item android:drawable="@drawable/remote_interaction_close_bg1" android:state_pressed="false"/>
-    <!-- focused -->
-
-</selector>

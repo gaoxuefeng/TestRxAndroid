@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="alipaysecsdk">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Yunge/libs/alipaysecsdk.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

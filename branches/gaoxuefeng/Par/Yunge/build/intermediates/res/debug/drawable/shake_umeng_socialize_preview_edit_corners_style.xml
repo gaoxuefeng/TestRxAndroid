@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"> 
-    <solid android:color="#ffffff" /> 
-    <corners android:radius="1dp"/> 
-    <padding android:left="0dp" android:top="0dp" android:right="0dp" 
-        android:bottom="0dp" /> 
-</shape><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/social_sdk_library_project/res/drawable/shake_umeng_socialize_preview_edit_corners_style.xml --><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/build/intermediates/exploded-aar/Par/social_sdk_library_project/unspecified/res/drawable/shake_umeng_socialize_preview_edit_corners_style.xml -->
