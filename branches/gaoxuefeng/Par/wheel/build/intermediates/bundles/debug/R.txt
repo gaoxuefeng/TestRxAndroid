@@ -1,0 +1,6 @@
+int color pre_center 0x7f030000
+int color pre_time 0x7f030001
+int color transport 0x7f030002
+int drawable donewheel_val 0x7f020000
+int drawable wheel_bg 0x7f020001
+int drawable wheel_val 0x7f020002

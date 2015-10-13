@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">云歌</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_first">预订</string>
+    <string name="tab_song">点歌</string>
+    <string name="tab_second">遥控</string>
+    <string name="tab_third">发现</string>
+    <string name="tab_forth">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_position_holder">this is home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_order_list">OrderListActivity</string>
+    <string name="ktv_order_title">KTV预订</string>
+    <string name="tab_name_city">北京</string>
+    <string name="tab_nearby">附近</string>
+    <string name="tab_order">智能排序</string>
+    <string name="title_activity_choose_city">ChooseCityActivity</string>
+    <string name="search_change_city_hint">搜索城市或地点</string>
+    <string name="city_header">A</string>
+    <string name="input_city_name">搜索城市或地点</string>
+    <string name="fgsong_demand_song">点歌台</string>
+    <string name="fgsong_demanded">已点</string>
+    <string name="fgsong_recorded">已录歌曲</string>
+    <string name="fgsong_finished">已唱</string>
+    <string name="title_singger">歌星</string>
+    <string name="title_langue">语种</string>
+    <string name="title_type">分类</string>
+    <string name="title_new_song">新歌</string>
+    <string name="title_top">热榜</string>
+    <string name="title_activity_singgers_actvity">SinggersActvity</string>
+    <string name="title_activity_language">LanguageActivity</string>
+    <string name="title_activity_type">TypeActivity</string>
+    <string name="title_activity_new_songs">NewSongsActivity</string>
+    <string name="title_activity_hot_songs">HotSongsActivity</string>
+    <string name="title_activity_song_list">SongListActivity</string>
+    <string name="title_activity_dermand_base">DermandBaseActivity</string>
+    <string name="title_activity_search_song">歌曲搜索</string>
+    <string name="title_activity_lib_test">LibTestActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_singler_list">SinglerListActivity</string>
+    <!-- 遥控器 -->
+    <string name="change_song">切歌</string>
+    <string name="catering">餐点酒水</string>
+    <string name="shoppingcar_isempty">购物车是空的</string>
+    <string name="title_activity_song_list_search_by_singer">SongListSearchBySingerActivity</string>
+    <string name="title_activity_sing_together">SingTogetherActivity</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_tab_activity">TabActivityA</string>
+    <string name="title_activity_tab_activity_b">预定KTV</string>
+    <string name="title_activity_tab_activity_a">KTV点歌</string>
+    <string name="title_activity_tab_activity_c">发现</string>
+    <string name="title_activity_tab_activity_d">我的</string>
+    <string name="title_activity_tab_c">TabCActivity</string>
+    <string name="finish_application">再按一次返回键退出程序！</string>
+    <string name="title_activity_singles">SinglesActivity</string>
+    <string name="title_activity_single">SingleActivity</string>
+    <string name="title_activity_top">TopActivity</string>
+</resources>

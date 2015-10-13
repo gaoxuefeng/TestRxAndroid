@@ -1,0 +1,34 @@
+<resources>
+
+    <color name="title_bg">#151417</color>
+    <color name="color_main_bg">#1C1C20</color>
+    <color name="search_main_bg">#1A1A1E</color>
+    <color name="text_color_namal">#5E616C</color>
+    <color name="text_color_song_name">#7E828D</color>
+    <color name="text_color_song_singleName">#4B4F59</color>
+    <color name="listview_divider">#161619</color>
+    <color name="user_info_name">#3B3A3C</color>
+    <color name="user_info_msg">#939393</color>
+    <color name="cloudsongbg">#222226</color>
+    <color name="text_bg">#93005c</color>
+    <color name="text_bg_cater">#6B8EBD</color>
+    <color name="order_white">#9799a2</color>
+	<color name="order_black">#5a5b61</color>
+	<color name="order_pink">#cd418f</color>
+	<color name="order_line_black">#000000</color>
+	<color name="order_line_black_three">#4c000000</color>
+	<color name="order_bj_black">#1c1c20</color>
+	<color name="white">#FFFFFF</color>
+	<color name="white_one">#19FFFFFF</color>
+    <color name="player_title_background">#151417</color>
+    <color name="player_title">#b5b7bf</color>
+    <color name="pink">#ff41ab</color>
+    <color name="player_time">#b5b7bf</color>
+    <color name="player_timealpha">#4cb5b7bf</color>
+    <color name="player_progress">#14ffffff</color>
+    <color name="view_color_two">#32000000</color>
+    <color name="rl_share_color_three">#4c351417</color>
+    <!-- 大平板 -->
+    <color name="text_color_namal_70">#B1FFFFFF</color>
+    <color name="text_color_namal_40">#65FFFFFF</color>
+</resources>

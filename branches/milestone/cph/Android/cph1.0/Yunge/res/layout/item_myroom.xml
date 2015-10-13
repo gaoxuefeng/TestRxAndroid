@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1d1c21"
+    >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_20px"
+        android:background="#1d1c21"
+        />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#242329"
+    android:paddingLeft="@dimen/design_30px" 
+    android:paddingBottom="@dimen/design_20px"
+    >
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/design_80px"
+            android:layout_height="@dimen/design_80px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/design_30px"
+            android:background="@drawable/mine_defaultavatar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/design_20px"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="爱唱歌的小孩"
+                android:textSize="@dimen/text_design_30px" 
+                android:textColor="@color/eight_write"/>
+
+            <TextView
+                android:id="@+id/tv_shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_username"
+                android:text="宝乐迪（望京店）"
+                android:textColor="@color/five_write"
+                android:textSize="@dimen/text_design_26px" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/iv_userhead"
+            android:layout_marginTop="@dimen/design_30px"
+            android:background="#1d1c21" />
+
+        <TextView
+            android:id="@+id/tv_descrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/mine_list_tag_begin"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/design_26ppx"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/design_24px"
+            android:text="离开始还有3天"
+            android:textSize="@dimen/text_design_22px"
+            android:textColor="@color/six_write"
+            />
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/tv_address"
+        android:paddingTop="@dimen/design_20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="陕西西安未央区太元路华远君城"
+        android:textSize="@dimen/text_design_22px"
+        android:textColor="@color/four_write"
+        android:drawableLeft="@drawable/mine_list_location_icon"
+        android:drawablePadding="@dimen/design_14px"
+        />
+    <TextView 
+        android:id="@+id/tv_jioncount"
+        android:layout_marginTop="@dimen/design_16px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="参与人数: 5人"
+        android:textSize="@dimen/text_design_22px"
+        android:textColor="@color/four_write"
+         android:drawableLeft="@drawable/mine_list_man_icon"
+        android:drawablePadding="@dimen/design_14px"
+        />
+    </LinearLayout>
+
+</LinearLayout>

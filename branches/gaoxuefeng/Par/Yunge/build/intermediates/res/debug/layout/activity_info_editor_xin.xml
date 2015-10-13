@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepager_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_head_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/design_40px"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/edit_rl_head_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_108px" >
+
+                <TextView
+                    android:id="@+id/edit_tv_xin_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/design_40px"
+                    android:gravity="center_vertical"
+                    android:text="更换头像"
+                    android:textColor="#4C4C53"
+                    android:textSize="@dimen/text_design_30px" />
+
+                <cn.com.ethank.yunge.app.util.XCRoundImageViewByXfermode
+                    android:id="@+id/edit_xin_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/design_50px"
+                     />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:layout_marginTop="10dp"
+                android:background="@color/text_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_rl_xin_nickName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_108px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/design_40px"
+                    android:gravity="center_vertical"
+                    android:text="昵称"
+                    android:textColor="#4C4C53"
+                    android:textSize="@dimen/text_design_30px" />
+
+                <TextView
+                    android:id="@+id/edit_tv_xin_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/design_50px"
+                    android:textColor="#B5B7BF"
+                    android:textSize="@dimen/design_28px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:background="@color/text_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_rl_xin_gender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_108px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/design_40px"
+                    android:gravity="center_vertical"
+                    android:text="性别"
+                    android:textColor="#4C4C53"
+                    android:textSize="@dimen/text_design_30px" />
+
+                <TextView
+                    android:id="@+id/edit_tv_xin_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/design_50px"
+                    android:drawablePadding="10dp"
+                    android:textColor="#B5B7BF"
+                    android:textSize="@dimen/design_28px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:background="@color/text_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_xin_age"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_108px" >
+
+                <TextView
+                    android:id="@+id/edit_tv_xin_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/design_40px"
+                    android:gravity="center_vertical"
+                    android:text="生日"
+                    android:textColor="#4C4C53"
+                    android:textSize="@dimen/text_design_30px" />
+
+                <TextView
+                    android:id="@+id/edit_your_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/design_50px"
+                    android:text="10-22"
+                    android:textColor="#B5B7BF"
+                    android:textSize="@dimen/design_28px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:background="@color/text_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_108px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/design_40px"
+                    android:gravity="center_vertical"
+                    android:text="所在地"
+                    android:textColor="#4C4C53"
+                    android:textSize="@dimen/text_design_30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/design_50px"
+                    android:text="北京"
+                    android:textColor="#B5B7BF"
+                    android:textSize="@dimen/design_28px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:background="@color/text_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_108px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/design_40px"
+                    android:gravity="center_vertical"
+                    android:text="不让他（她）看我的动态"
+                    android:textColor="#4C4C53"
+                    android:textSize="@dimen/text_design_30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/design_50px"
+                    android:text="10-22"
+                    android:textColor="#B5B7BF"
+                    android:textSize="@dimen/design_28px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:background="@color/text_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_108px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/design_40px"
+                    android:gravity="center_vertical"
+                    android:text="已加入潮趴汇"
+                    android:textColor="#4C4C53"
+                    android:textSize="@dimen/text_design_30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/design_50px"
+                    android:text="1天"
+                    android:textColor="#B5B7BF"
+                    android:textSize="@dimen/design_28px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:background="@color/text_color" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/activity_info_editor_xin.xml -->

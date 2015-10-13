@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:gravity="center_vertical">
+	<RelativeLayout 
+	    android:id="@+id/rl_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/map_black_bg"
+	    android:paddingTop="@dimen/design_26px" 
+	    android:paddingLeft="@dimen/design_26px"
+	    android:paddingRight="@dimen/design_26px"
+	    >
+	    <RelativeLayout 
+	        android:id="@+id/rl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        >
+    <TextView
+        android:id="@+id/tv_ktvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/four_write"
+        android:textSize="@dimen/text_design_28px"
+        android:maxEms="4"
+        android:gravity="top"
+        android:singleLine="true"
+        android:ellipsize="end" 
+        android:text="宝乐迪KTV"/>
+
+    <TextView
+        android:id="@+id/tv_ktvadress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ktvname"
+        android:layout_marginTop="@dimen/design_6px"
+        android:textColor="@color/four_write"
+        android:textSize="@dimen/text_design_18px" 
+        android:maxEms="8"
+        android:ellipsize="end"
+        android:gravity="top"
+        android:singleLine="true"
+        android:text="地铁九棵松"
+        />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_gps"
+        android:layout_toRightOf="@id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/design_26px"
+        android:background="@drawable/map_navigation_icon" />
+    </RelativeLayout>
+
+    
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/mine_map_pop_layout.xml -->

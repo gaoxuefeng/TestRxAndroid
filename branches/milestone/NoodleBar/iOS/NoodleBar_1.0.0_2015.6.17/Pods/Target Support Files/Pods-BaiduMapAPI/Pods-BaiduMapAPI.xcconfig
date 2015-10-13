@@ -1,0 +1,2 @@
+PODS_BAIDUMAPAPI_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/BaiduMapAPI/Framework"
+PODS_BAIDUMAPAPI_OTHER_LDFLAGS = -l"stdc++" -l"stdc++.6" -framework "BaiduMapAPI" -framework "CoreGraphics" -framework "CoreLocation" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"

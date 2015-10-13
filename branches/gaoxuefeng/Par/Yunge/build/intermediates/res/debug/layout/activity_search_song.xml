@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepager_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.coyotelib.app.ui.widget.BasicTitle
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <EditText
+                android:id="@+id/et_search_song"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/bt_dismiss"
+                android:background="@drawable/search_bg"
+                android:drawableLeft="@drawable/song_search_icon"
+                android:gravity="center_vertical"
+                android:hint="  输入歌手名字或者歌名"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="@color/alphe40white"
+                android:textSize="@dimen/text_design_28px" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/bt_dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#00FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="取消"
+                android:textColor="@color/alphe60white"
+                android:textSize="@dimen/text_design_28px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <RadioGroup
+                android:id="@+id/rg_search_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" >
+
+                <RadioButton
+                    android:id="@+id/rb_search_song1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_song_name"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:minEms="5"
+                    android:singleLine="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_search_song2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_singer_name"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:minEms="5"
+                    android:singleLine="true" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/listview_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <cn.com.ethank.yunge.view.MyViewPager
+                android:id="@+id/vp_search_song_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-2dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:scrollbars="none" >
+            </cn.com.ethank.yunge.view.MyViewPager>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/listview_divider" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/activity_search_song.xml -->

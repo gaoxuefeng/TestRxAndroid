@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/remote_change_song_h" android:state_pressed="true"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/remote_change_song_n" android:state_pressed="false"/>
+    <!-- focused -->
+
+</selector>

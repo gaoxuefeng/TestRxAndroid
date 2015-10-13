@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_selectphoto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:clickable="true"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#212121"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_110px"
+            android:layout_marginBottom="1dp"
+            android:background="#2A2A2A"
+            android:text="拍照"
+            android:textColor="#B5B7BF" />
+
+        <Button
+            android:id="@+id/bt_select_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_110px"
+            android:layout_marginBottom="5dp"
+            android:background="#2A2A2A"
+            android:text="从手机相册选择"
+            android:textColor="#B5B7BF" />
+
+        <Button
+            android:id="@+id/bt_dismiss"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_110px"
+            android:background="#2A2A2A"
+            android:text="取消"
+            android:textColor="#B5B7BF" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/select_photo_way.xml -->

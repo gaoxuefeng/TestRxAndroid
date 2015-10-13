@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/set_ll_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_118px"
+        android:background="#151417" >
+
+        <TextView
+            android:id="@+id/set_tv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/design_30px"
+            android:clickable="true"
+            android:drawableLeft="@drawable/nav_back"
+            android:drawablePadding="@dimen/design_10px"
+            android:enabled="true"
+            android:text="我的"
+            android:textColor="#FF41AB"
+            android:textSize="@dimen/text_design_28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#B5B7BF"
+            android:textSize="@dimen/text_design_36px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#88000000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1E1D21"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/set_rl_modifypw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_118px"
+            android:layout_marginTop="20dp"
+            android:background="#2C2A30" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_32px"
+                android:drawablePadding="@dimen/design_30px"
+                android:gravity="center_vertical"
+                android:text="修改密码"
+                android:textColor="#B5B7BF"
+                android:textSize="@dimen/text_design_28px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/list_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/set_rl_grade"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_118px"
+            android:layout_marginTop="10dp"
+            android:background="#2C2A30" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_32px"
+                android:drawablePadding="@dimen/design_30px"
+                android:gravity="center_vertical"
+                android:text="给潮趴汇评个分"
+                android:textColor="#B5B7BF"
+                android:textSize="@dimen/text_design_28px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/list_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_rl_opinion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_118px"
+            android:layout_marginTop="10dp"
+            android:background="#2C2A30" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_32px"
+                android:drawablePadding="@dimen/design_30px"
+                android:gravity="center_vertical"
+                android:text="意见反馈"
+                android:textColor="#B5B7BF"
+                android:textSize="@dimen/text_design_28px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/list_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_rl_about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_118px"
+            android:layout_marginTop="10dp"
+            android:background="#2C2A30" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_32px"
+                android:drawablePadding="@dimen/design_30px"
+                android:gravity="center_vertical"
+                android:text="关于潮趴汇"
+                android:textColor="#B5B7BF"
+                android:textSize="@dimen/text_design_28px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/list_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_rl_cache"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_118px"
+            android:layout_marginTop="10dp"
+            android:background="#2C2A30" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_32px"
+                android:drawablePadding="@dimen/design_30px"
+                android:gravity="center_vertical"
+                android:text="清除缓存"
+                android:textColor="#B5B7BF"
+                android:textSize="@dimen/text_design_28px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/list_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/set_rl_check_version_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_118px"
+            android:layout_marginTop="10dp"
+            android:background="#2C2A30" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_32px"
+                android:drawablePadding="@dimen/design_30px"
+                android:gravity="center_vertical"
+                android:text="检查更新"
+                android:textColor="#B5B7BF"
+                android:textSize="@dimen/text_design_28px" />
+
+            <ImageView
+                android:id="@+id/iv_circle_update"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/iv_arrow_update"
+                android:background="@drawable/bg_update_circle"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_update"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/list_next" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/set_rl_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_118px"
+            android:layout_marginTop="10dp"
+            android:background="#2C2A30" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_32px"
+                android:drawablePadding="@dimen/design_30px"
+                android:gravity="center_vertical"
+                android:text="退出登录"
+                android:textColor="#B5B7BF"
+                android:textSize="@dimen/text_design_28px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/list_next" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

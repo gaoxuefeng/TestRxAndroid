@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepager_bg"
+    android:orientation="vertical" >
+    <include layout="@layout/activity_head_title" />
+  
+    <cn.com.ethank.yunge.view.MyRefreshListView
+        android:id="@+id/mrfg_discover"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/design_40px"
+        android:layout_weight="1"
+        android:layout_below="@id/title"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:background="@color/transparent" >
+    </cn.com.ethank.yunge.view.MyRefreshListView>
+    <LinearLayout 
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/design_40px"
+        
+        android:paddingBottom="@dimen/design_24px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/bg_color"
+        >
+        <RelativeLayout 
+            android:id="@+id/rl_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/design_46px"
+            android:paddingRight="@dimen/design_50px"
+            >
+            <ImageView 
+            android:id="@+id/iv_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:background="@drawable/mine_tage_control_play"
+            />
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/tv_record_changetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            />
+        <SeekBar
+                android:id="@+id/sb_record_progress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/design_10px"
+                android:minHeight="@dimen/design_34px"
+                android:layout_weight="1"
+                android:progressDrawable="@drawable/record_progress_drawable"
+                android:thumb="@drawable/mine_tape_slider"
+                android:thumbOffset="0dp" />
+         <TextView 
+            android:id="@+id/tv_record_alltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_marginLeft="@dimen/design_10px"
+            />
+        
+    </LinearLayout>
+    
+
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/activity_record_xin.xml -->

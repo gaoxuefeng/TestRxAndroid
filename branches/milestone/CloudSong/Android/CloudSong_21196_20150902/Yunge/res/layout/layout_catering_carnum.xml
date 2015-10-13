@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:paddingLeft="15dp" >
+
+    <ImageView
+        android:id="@+id/iv_carlist_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shoppingcar_icon" />
+
+    <TextView
+        android:id="@+id/iv_num_id"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/iv_carlist_id"
+        android:background="@drawable/circle_bg_tv_carnum"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:textColor="@color/WHITE"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

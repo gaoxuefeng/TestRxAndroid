@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1C1C20"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_single"
+            android:layout_width="45dp"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/iv_single"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/mine_defaultavatar" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/circle_head_over" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/rl_single"
+            android:layout_alignTop="@id/rl_single"
+            android:layout_toLeftOf="@+id/rl_demanded_song"
+            android:layout_toRightOf="@id/rl_single"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="这个疯子"
+                android:textColor="#ff00ab"
+                android:textSize="@dimen/text_design_22px" />
+
+            <TextView
+                android:id="@+id/tv_music_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha="0.9"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="小苹果"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_design_28px" />
+
+            <TextView
+                android:id="@+id/tv_music_singler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="国语-筷子兄弟"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_design_20px" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_demanded_song"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_demand_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:padding="15dp"
+                android:src="@drawable/song_seletor_btn" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#141317"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_song_to_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/song_delete_icon"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:text="   删除歌曲"
+                android:textColor="#56565C"
+                android:textSize="@dimen/text_design_28px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_song_to_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/song_top_icon"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:text="   置顶歌曲"
+                android:textColor="#56565C"
+                android:textSize="@dimen/text_design_28px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/tem_demanded_song_new.xml -->

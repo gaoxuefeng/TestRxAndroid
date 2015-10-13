@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="162dp"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_item_song"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_162px"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_single"
+            android:layout_width="@dimen/design_100px"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <cn.com.ethank.yunge.pad.view.XCRoundImageViewByXfermode
+                android:id="@+id/iv_single"
+                android:layout_width="@dimen/design_100px"
+                android:layout_height="@dimen/design_100px"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_demand_song"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/design_162px"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/tv_demand_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/song_add_btn"
+                android:gravity="center"
+                android:minEms="3"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#8994AA" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@id/rl_single"
+            android:layout_alignTop="@id/rl_single"
+            android:layout_toLeftOf="@id/rl_demand_song"
+            android:layout_toRightOf="@id/rl_single"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/design_30px" >
+
+            <TextView
+                android:id="@+id/tv_music_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="小苹果"
+                android:textColor="@color/text_color_namal_70"
+                android:textSize="@dimen/text_design_38px" />
+
+            <TextView
+                android:id="@+id/tv_music_singler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="国语-筷子兄弟"
+                android:textColor="@color/text_color_namal_40"
+                android:textSize="@dimen/text_design_30px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

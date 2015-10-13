@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.coyotelib.app.ui.widget.BasicTitle
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <cn.com.ethank.yunge.view.NetworkLayout
+            android:id="@+id/network_homepager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_normal_homepager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/titleTopbg_iv_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:background="@drawable/home_img01_bg"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible" />
+
+                <cn.com.ethank.yunge.view.MyRefreshListView
+                    android:id="@+id/mrlv_home_infos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#00ffffff"
+                    android:dividerHeight="10dp"
+                    android:listSelector="#00ffffff"
+                    android:scrollbars="none" >
+                </cn.com.ethank.yunge.view.MyRefreshListView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_home_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_88px"
+                android:background="#000000"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首页"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

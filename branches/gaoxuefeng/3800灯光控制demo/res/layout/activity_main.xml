@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/link_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调" />
+
+            <Button
+                android:id="@+id/air_open"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调开" />
+
+            <Button
+                android:id="@+id/air_close"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调关" />
+
+            <Button
+                android:id="@+id/air_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调1档" />
+
+            <Button
+                android:id="@+id/air_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调2档" />
+
+            <Button
+                android:id="@+id/air_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调3档" />
+
+            <Button
+                android:id="@+id/air_auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调自动" />
+
+            <Button
+                android:id="@+id/air_increment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调＋" />
+
+            <Button
+                android:id="@+id/air_degree"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调－" />
+
+            <Button
+                android:id="@+id/air_cool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调制冷" />
+
+            <Button
+                android:id="@+id/air_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调制热" />
+
+            <Button
+                android:id="@+id/air_wind"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="空调排风" />
+
+            <Button
+                android:id="@+id/air_exhaust_open"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="排风开" />
+
+            <Button
+                android:id="@+id/air_exhaust_close"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="排风关" />
+
+            <Button
+                android:id="@+id/light_langman"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="浪漫" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

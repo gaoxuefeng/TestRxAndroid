@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/design_120px"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/item_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="￥49"
+            android:textColor="#ff00ab"
+            android:textSize="@dimen/text_design_28px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/item_tv_price"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_tv_box_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_design_26px" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/item_tv_box_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_color_set"
+                android:textSize="@dimen/text_design_22px" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/item_but_pre"
+            android:layout_width="@dimen/design_86px"
+            android:layout_height="@dimen/design_58px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/design_40px"
+            android:background="@drawable/pre_shape"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="预订"
+            android:textColor="#ccFFFFFF"
+            android:textSize="@dimen/design_24px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/design_20px"
+        android:background="@color/text_color" />
+
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/item_box_type.xml -->

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/bt_photo_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="相册" />
+
+    <Button
+        android:id="@+id/bt_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/bt_wihthout_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="直接跳" />
+
+    <ImageView
+        android:id="@+id/iv_save_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

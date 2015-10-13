@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1d1c21"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/history_head"
+        layout="@layout/activity_head_title" />
+
+    <cn.com.ethank.yunge.view.MyRefreshListView
+        android:id="@+id/history_mrlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none" >
+    </cn.com.ethank.yunge.view.MyRefreshListView>
+
+</LinearLayout>

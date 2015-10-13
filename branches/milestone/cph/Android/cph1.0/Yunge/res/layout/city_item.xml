@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#151417"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/city_header" />
+
+    <LinearLayout
+        android:id="@+id/linear_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:background="#121215"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_weight="1.0"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="北京"
+        android:textColor="#54555A" />
+
+    <LinearLayout
+        android:id="@+id/city_hot_city_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <cn.com.ethank.yunge.app.search.city.HotCityCheatView
+            android:id="@+id/hcv_hotcity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </cn.com.ethank.yunge.app.search.city.HotCityCheatView>
+    </LinearLayout>
+
+</LinearLayout>

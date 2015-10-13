@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#66000000"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/confirm_dialog_anim_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/confirm_dialog_anim_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#5ad705" />
+
+        <TextView
+            android:id="@+id/confirm_dilog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="fill"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="40dp"
+            android:text="标题"
+            android:textColor="#5f5f5f"
+            android:textSize="16sp"
+             android:clickable="true"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/space_holder_between_title_and_message"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/confirm_dilog_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="fill"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="18dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="18dp"
+            android:clickable="true"
+            android:text="确定?"
+            android:textColor="#5f5f5f"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/confirm_dilog_input_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#e1e1e1" />
+
+        <EditText
+            android:id="@+id/confirm_dilog_input"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:hint="关键词"
+            android:paddingBottom="21dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="21dp"
+            android:textColor="#5f5f5f"
+            android:textColorHint="#b9b9b9"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#e1e1e1" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/confirm_dilog_oprator_panel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/confirm_dilog_oprator_ok_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/confirm_dilog_cancle"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/basic_list_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#5f5f5f"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="#e1e1e1" />
+
+                <TextView
+                    android:id="@+id/confirm_dilog_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/basic_list_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="#5f5f5f"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

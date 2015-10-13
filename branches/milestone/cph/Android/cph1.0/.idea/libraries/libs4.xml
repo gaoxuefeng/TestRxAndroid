@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="libs4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/umeng-analytics-v5.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/universal-image-loader-1.8.6-with-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/alipayutdid.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/zxing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/fastjson-1.1.39.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/pinyin4j-2.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/jpush-sdk-release1.7.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/alipaysdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/locSDK_5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/BaiduLBS_Android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/云歌历史版本/20150804青岛部署后版本/Yunge/libs/alipaysecsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

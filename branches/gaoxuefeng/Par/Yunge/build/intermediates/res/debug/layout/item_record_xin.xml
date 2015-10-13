@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <TextView
+        android:id="@+id/tv_musicname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/design_40px"
+        android:layout_marginTop="@dimen/design_36px"
+        android:text="鞋子特大号"
+        android:textColor="@color/eight_write"
+        android:textSize="@dimen/text_design_28px" />
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/design_40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_musicname"
+        android:layout_marginTop="@dimen/design_22px" >
+
+        <TextView
+            android:id="@+id/tv_recordtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7-15"
+            android:textColor="@color/four_write"
+            android:textSize="@dimen/text_design_22px" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/design_110px"
+            android:layout_toRightOf="@id/tv_recordtime"
+            android:drawableLeft="@drawable/mine_time_icon"
+            android:drawablePadding="@dimen/design_10px"
+            android:text="4分25秒"
+            android:textColor="@color/four_write"
+            android:textSize="@dimen/text_design_22px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginRight="@dimen/design_40px"
+        android:id="@+id/iv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/design_46px"
+        android:background="@drawable/mine_share_btn" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/iv_share"
+        android:layout_marginTop="@dimen/design_46px"
+        android:background="@color/text_color" />
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/item_record_xin.xml -->

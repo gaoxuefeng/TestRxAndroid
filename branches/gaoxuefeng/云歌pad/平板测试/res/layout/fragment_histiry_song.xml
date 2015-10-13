@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <cn.com.ethank.yunge.pad.view.MyRefreshListView
+        android:id="@+id/mrlv_history_songs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#0AFFFFFF"
+        android:dividerHeight="1dp" >
+    </cn.com.ethank.yunge.pad.view.MyRefreshListView>
+
+</RelativeLayout>

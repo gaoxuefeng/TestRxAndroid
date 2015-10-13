@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C20"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <cn.com.ethank.yunge.view.SideBar
+        android:id="@+id/sb_song_list"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" >
+    </cn.com.ethank.yunge.view.SideBar>
+
+    <cn.com.ethank.yunge.view.MyRefreshListView
+        android:id="@+id/mrlv_songs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/sb_song_list"
+        android:divider="#161616"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" >
+    </cn.com.ethank.yunge.view.MyRefreshListView>
+
+</RelativeLayout>

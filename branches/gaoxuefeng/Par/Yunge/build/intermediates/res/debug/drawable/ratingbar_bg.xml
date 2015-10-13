@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/background" android:drawable="@drawable/schedule_star_1"/>
+	<item android:id="@android:id/secondaryProgress" android:drawable="@drawable/schedule_star_2"/>
+	<item android:id="@android:id/progress" android:drawable="@drawable/schedule_star_3" />
+</layer-list><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/drawable/ratingbar_bg.xml -->

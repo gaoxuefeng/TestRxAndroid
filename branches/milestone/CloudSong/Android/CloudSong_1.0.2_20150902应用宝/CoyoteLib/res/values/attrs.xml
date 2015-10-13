@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="imgbtn">
+        <attr name="img" format="reference" />
+        <attr name="title" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="settingitemtitle">
+        <attr name="itemtitle" format="string" />
+        <attr name="itemdetail" format="string" />
+    </declare-styleable>
+    
+     <declare-styleable name="settingclickitem">
+        <attr name="clicktitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SgLetterList">
+        <attr name="letterColor" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="SkinChangable">
+        <attr name="appbg" format="reference"/>
+        <attr name="buttonbg" format="reference"/>
+        <attr name="sinktextcolor" format="reference"/>
+    </declare-styleable>
+
+</resources>
+  

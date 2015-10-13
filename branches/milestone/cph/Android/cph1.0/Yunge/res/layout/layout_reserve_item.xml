@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BLACK"
+        android:clickable="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/order_black"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp" >
+
+        <!-- 左边图片 -->
+
+        <ImageView
+            android:id="@+id/iv_reserve"
+            android:layout_width="92dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="13dp"
+            android:alpha="0.4"
+            android:background="@drawable/ktvbgj" />
+        <!-- 中间描述 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@id/iv_reserve" >
+
+            <RelativeLayout
+                android:id="@+id/rl_ktvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_KTV_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金永"
+                    android:textColor="@color/order_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_KTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_KTV_name"
+                    android:text="KTV"
+                    android:textColor="@color/order_white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_tuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@id/tv_KTV_name"
+                    android:background="@drawable/schedule_cu_tap"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_cu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_tuan"
+                    android:background="@drawable/schedule_tuan_tap"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_ding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_cu"
+                    android:background="@drawable/schedule_ding_tap"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_ktvname"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical" >
+
+                <RatingBar
+                    android:id="@+id/app_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:isIndicator="true"
+                    android:progressDrawable="@drawable/ratingbar_bg"
+                    android:rating="3.5" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/app_star"
+                    android:text="￥65/人"
+                    android:textColor="@color/order_white"
+                    android:textSize="9sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:text="1.3折"
+                    android:textColor="@color/order_pink"
+                    android:textSize="9sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <TextView
+                    android:id="@+id/tv_ktv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="望京"
+                    android:textColor="@color/order_black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@id/tv_ktv_location"
+                    android:text="KTV"
+                    android:textColor="@color/order_black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:text="1.3km"
+                    android:textColor="@color/order_black"
+                    android:textSize="10sp" >
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/order_line_black_three" />
+
+</LinearLayout>

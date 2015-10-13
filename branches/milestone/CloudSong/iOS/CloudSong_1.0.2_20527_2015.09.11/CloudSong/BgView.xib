@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iwy-lG-vCx" customClass="BgView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="find_praise_icon" translatesAutoresizingMaskIntoConstraints="NO" id="LhX-NR-b0N">
+                    <rect key="frame" x="20" y="2" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="emZ-Bz-CcT"/>
+                        <constraint firstAttribute="height" constant="15" id="vVy-mw-mnD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvy-p4-AGe">
+                    <rect key="frame" x="39" y="5" width="12" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="cMr-rv-nyF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="find_listen_icon" translatesAutoresizingMaskIntoConstraints="NO" id="AF3-Yj-7DG">
+                    <rect key="frame" x="64" y="2" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="EF0-ke-bLW"/>
+                        <constraint firstAttribute="height" constant="15" id="XR5-AO-2We"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Guf-Fk-Ty3">
+                    <rect key="frame" x="83" y="5" width="30" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="n5f-ve-LUE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LhX-NR-b0N" firstAttribute="leading" secondItem="iwy-lG-vCx" secondAttribute="leading" constant="20" id="IYb-6c-e4Z"/>
+                <constraint firstAttribute="bottom" secondItem="LhX-NR-b0N" secondAttribute="bottom" constant="3" id="KW3-Rg-FWr"/>
+                <constraint firstAttribute="bottom" secondItem="pvy-p4-AGe" secondAttribute="bottom" constant="5" id="Lnc-7N-RYH"/>
+                <constraint firstItem="pvy-p4-AGe" firstAttribute="top" secondItem="iwy-lG-vCx" secondAttribute="top" constant="5" id="WAq-BM-7az"/>
+                <constraint firstItem="AF3-Yj-7DG" firstAttribute="leading" secondItem="pvy-p4-AGe" secondAttribute="trailing" constant="13" id="aPX-Zj-WiU"/>
+                <constraint firstItem="Guf-Fk-Ty3" firstAttribute="top" secondItem="iwy-lG-vCx" secondAttribute="top" constant="5" id="amj-hD-ch6"/>
+                <constraint firstAttribute="bottom" secondItem="AF3-Yj-7DG" secondAttribute="bottom" constant="3" id="euR-cO-2md"/>
+                <constraint firstItem="pvy-p4-AGe" firstAttribute="leading" secondItem="LhX-NR-b0N" secondAttribute="trailing" constant="4" id="nvt-Xc-o3x"/>
+                <constraint firstAttribute="bottom" secondItem="Guf-Fk-Ty3" secondAttribute="bottom" constant="5" id="vTT-h8-iHC"/>
+                <constraint firstItem="Guf-Fk-Ty3" firstAttribute="leading" secondItem="AF3-Yj-7DG" secondAttribute="trailing" constant="4" id="y78-zN-5BZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="favourCountLab" destination="pvy-p4-AGe" id="jR9-RC-3Lt"/>
+                <outlet property="listenCountLab" destination="Guf-Fk-Ty3" id="UXu-me-ttB"/>
+            </connections>
+            <point key="canvasLocation" x="-56" y="278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="find_listen_icon" width="10" height="10"/>
+        <image name="find_praise_icon" width="10" height="10"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

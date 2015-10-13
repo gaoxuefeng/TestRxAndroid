@@ -1,0 +1,10 @@
+友盟测试KEY
+	<meta-data
+	     android:name="UMENG_APPKEY"
+	     android:value="55cab9ee67e58e6da0003b34" >
+	</meta-data>
+友盟KEY
+<meta-data
+	android:name="UMENG_APPKEY"
+	android:value="554c75f467e58eeb76000144" >
+</meta-data>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151417"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/bound_tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/nav_back"
+            android:drawablePadding="@dimen/design_12px"
+            android:enabled="true"
+            android:text="登录"
+            android:textColor="#FD2C98"
+            android:textSize="@dimen/text_design_28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="手机号码绑定"
+            android:textColor="#BBFFFFFF"
+            android:textSize="@dimen/text_design_36px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/bound_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_104px"
+            android:layout_marginLeft="@dimen/design_38px"
+            android:layout_marginRight="10dp"
+            android:background="#1E1D21"
+            android:drawableLeft="@drawable/link_phone_phone_icon"
+            android:drawablePadding="@dimen/design_30px"
+            android:hint="请输入手机号码"
+            android:phoneNumber="true"
+            android:textColor="#669799A1"
+            android:textSize="@dimen/text_design_28px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/design_20px"
+            android:layout_marginRight="@dimen/design_20px"
+            android:background="#33000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_104px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#1E1D21"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/bound_et_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_18px"
+                android:layout_weight="1"
+                android:background="#1E1D21"
+                android:clickable="true"
+                android:drawableLeft="@drawable/link_phone_verification_code_icon"
+                android:drawablePadding="@dimen/design_30px"
+                android:hint="短信验证码"
+                android:onClick="code"
+                android:textColor="#669799A1"
+                android:textSize="@dimen/text_design_28px" />
+
+            <Button
+                android:id="@+id/bound_but_code"
+                android:layout_width="110dp"
+                android:layout_height="@dimen/design_72px"
+                android:background="@drawable/button_code"
+                android:text="获取验证码"
+                android:textColor="#B5B7BF"
+                android:textSize="@dimen/text_design_26px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bound_ll"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_shape"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/bound_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_104px"
+            android:layout_marginLeft="@dimen/design_38px"
+            android:layout_marginRight="10dp"
+            android:background="#1E1D21"
+            android:drawableLeft="@drawable/register_key_icon"
+            android:drawablePadding="@dimen/design_30px"
+            android:hint="请设置登录密码"
+            android:inputType="textPassword"
+            android:phoneNumber="true"
+            android:textColor="#669799A1"
+            android:textSize="@dimen/text_design_28px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/design_20px"
+            android:layout_marginRight="@dimen/design_20px"
+            android:background="#33000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/bound_nickName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_104px"
+                android:layout_marginLeft="@dimen/design_38px"
+                android:layout_marginRight="10dp"
+                android:background="#1E1D21"
+                android:drawableLeft="@drawable/register_name_icon"
+                android:drawablePadding="@dimen/design_30px"
+                android:hint="请设置一个昵称"
+                android:textColor="#669799A1"
+                android:textSize="@dimen/text_design_28px" />
+
+            <ProgressBar
+                android:id="@+id/bound_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/bound_tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/design_32px"
+            android:layout_marginTop="@dimen/design_28px"
+            android:drawableLeft="@drawable/link_phone_remind"
+            android:drawablePadding="@dimen/design_12px"
+            android:text="绑定后可以使用手机号码和密码登陆"
+            android:textColor="#B5B7BF"
+            android:textSize="@dimen/text_design_24px" />
+
+        <Button
+            android:id="@+id/bt_bound_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_78px"
+            android:layout_marginLeft="@dimen/design_20px"
+            android:layout_marginRight="@dimen/design_20px"
+            android:layout_marginTop="@dimen/design_28px"
+            android:background="@drawable/button_login"
+            android:text="绑定"
+            android:textColor="#F2F2F2"
+            android:textSize="@dimen/text_design_34px" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/activity_bound_phone.xml -->

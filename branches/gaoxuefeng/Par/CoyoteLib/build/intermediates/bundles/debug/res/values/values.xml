@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/CoyoteLib/res/values/color.xml -->
+    <eat-comment/>
+    <color name="BLACK">#000000</color>
+    <color name="BLUE">#00bfff</color>
+    <color name="BTN_PRESS">#343434</color>
+    <color name="DARK_WHITE">#FeFeFe</color>
+    <color name="GRAY">#d0d0d0</color>
+    <color name="GREEN">#00FF00</color>
+    <color name="LIGHTER_GRAY">#F2F2F2</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="basic_bg_color">#34b87f</color>
+    <color name="basic_list_spliter">#dadada</color>
+    <color name="black_list_spliter">#141418</color>
+    <color name="block_spliter_bg">#f5f5f5</color>
+    <color name="bottom_select">#4a4a4a</color>
+    <color name="bottom_tab_bg">#fcfcfc</color>
+    <color name="bottom_tab_line_normal">#646464</color>
+    <color name="bottom_tab_line_select">#00ff00</color>
+    <color name="bottom_tab_tx_select">#AAFF00</color>
+    <color name="cloudsongbg">#222226</color>
+    <color name="cloudsongblack">#1b1b1d</color>
+    <color name="conversation_normal">#FFFFFF</color>
+    <color name="conversation_pressed">#F2F2F2</color>
+    <color name="divider_color">#66666666</color>
+    <color name="entry_list_normal">#FFFFFF</color>
+    <color name="entry_list_pressed">#F5F5F5</color>
+    <color name="gray">#F5F5F5</color>
+    <color name="list_text_color">#383838</color>
+    <color name="list_text_color_light">#9b9b9b</color>
+    <color name="list_text_color_light_six">#889b9b9b</color>
+    <color name="medicine_list_price_color">#34b87f</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="red">#FF0000</color>
+    <color name="result_view">#1A1A1E</color>
+    <color name="search_input_hint">#9b9b9b</color>
+    <color name="tab_name_selected">#F844A8</color>
+    <color name="tab_name_unselected">#333138</color>
+    <color name="tahiti_basic_tx_color">#00FF00</color>
+    <color name="trans">#33000000</color>
+    <color name="trans_reminder_unselect">#22f5f5f5</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_mask">#1A1A1E</color>
+    <declare-styleable name="SgLetterList"><attr format="string" name="letterColor"/></declare-styleable>
+    <declare-styleable name="SkinChangable"><attr format="reference" name="appbg"/><attr format="reference" name="buttonbg"/><attr format="reference" name="sinktextcolor"/></declare-styleable>
+    <declare-styleable name="imgbtn"><attr format="reference" name="img"/><attr format="string" name="title"/></declare-styleable>
+    <declare-styleable name="settingclickitem"><attr format="string" name="clicktitle"/></declare-styleable>
+    <declare-styleable name="settingitemtitle"><attr format="string" name="itemtitle"/><attr format="string" name="itemdetail"/></declare-styleable>
+    <!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/CoyoteLib/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/CoyoteLib/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">CoyoteLib</string>
+    <string name="city_header">city_header</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="not_updated_yet">没有新数据</string>
+    <string name="pull_to_refresh">下拉刷线</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="release_to_refresh">松手加载新数据</string>
+    <string name="scan_text">开始扫描</string>
+    <string name="time_error">超时</string>
+    <string name="updated_at">更新于</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/CoyoteLib/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="BasicFillTx">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fadingEdgeLength">0dp</item>
+    </style>
+    <style name="BasicHonSpliter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5px</item>
+        <item name="android:background">@color/basic_list_spliter</item>
+    </style>
+    <style name="BasicList">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@color/basic_list_spliter</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+    <style name="BasicListLinearLayoutContainerV">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:background">@drawable/entry_basic_list_selector</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="BasicText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+    <style name="BasicVerSpliter">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/basic_list_spliter</item>
+    </style>
+    <style name="BasicWrapTx">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="ClickableTx" parent="SingleLineWrapTx">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="SearchInput">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#252525</item>
+        <item name="android:textColorHint">@color/search_input_hint</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">11dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="SearchTabTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="SearchTabView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="SingLineTx">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="SingLineTxCenter" parent="SingLineTx">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>ßßßßß
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="SingleLineWrapTx" parent="BasicWrapTx">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="themeTest1" parent="AppBaseTheme">
+        <item name="appbg">@color/BLACK</item>
+        <item name="sinktextcolor">@color/red</item>
+    </style>
+    <style name="themeTest2" parent="AppBaseTheme">
+        <item name="appbg">@color/WHITE</item>
+        <item name="sinktextcolor">@color/GREEN</item>
+    </style>
+</resources>

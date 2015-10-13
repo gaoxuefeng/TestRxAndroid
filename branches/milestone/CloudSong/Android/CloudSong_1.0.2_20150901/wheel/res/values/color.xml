@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 点歌 -->
+    <color name="pre_time">#422769</color>
+    <color name="pre_center">#311f4c</color>
+	<color name="transport">#00000000</color>
+</resources>

@@ -1,0 +1,19 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/remote_singer_circle"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@drawable/remote_theatre_circle"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@drawable/remote_caraok_circle"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/remote_magic_circle"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@drawable/remote_concert_circle"
+        android:maxLevel="4"/>
+
+</level-list>

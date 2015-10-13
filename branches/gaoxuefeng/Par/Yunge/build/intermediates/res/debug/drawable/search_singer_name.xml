@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/search_singer_name_s" android:state_checked="true"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/search_singer_name_n" android:state_checked="false"/>
+    <!-- focused -->
+
+</selector><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/drawable/search_singer_name.xml -->

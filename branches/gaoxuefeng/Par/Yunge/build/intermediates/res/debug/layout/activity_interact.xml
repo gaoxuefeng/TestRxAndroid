@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:iteminfo="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_activity_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/iv_pop_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <cn.com.ethank.yunge.app.remotecontrol.interactcontrl.RlItemLayout
+                android:id="@+id/rl_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:visibility="invisible"
+                iteminfo:item_name="发文字"
+                iteminfo:item_src="@drawable/remote_interaction_text_icon" >
+            </cn.com.ethank.yunge.app.remotecontrol.interactcontrl.RlItemLayout>
+
+            <cn.com.ethank.yunge.app.remotecontrol.interactcontrl.RlItemLayout
+                android:id="@+id/rl_ducks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rl_text"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:visibility="invisible"
+                iteminfo:item_name="发涂鸦"
+                iteminfo:item_src="@drawable/remote_interaction_diy_icon" >
+            </cn.com.ethank.yunge.app.remotecontrol.interactcontrl.RlItemLayout>
+
+            <cn.com.ethank.yunge.app.remotecontrol.interactcontrl.RlItemLayout
+                android:id="@+id/rl_photos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_text"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:visibility="invisible"
+                iteminfo:item_name="发图片"
+                iteminfo:item_src="@drawable/remote_interaction_img_icon" >
+            </cn.com.ethank.yunge.app.remotecontrol.interactcontrl.RlItemLayout>
+
+            <cn.com.ethank.yunge.app.remotecontrol.interactcontrl.RlItemLayout
+                android:id="@+id/rl_emoticon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_ducks"
+                android:layout_toRightOf="@+id/rl_photos"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:visibility="invisible"
+                iteminfo:item_name="发表情"
+                iteminfo:item_src="@drawable/remote_interaction_expression_icon" >
+            </cn.com.ethank.yunge.app.remotecontrol.interactcontrl.RlItemLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_close"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/remote_interaction_close_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/remote_interaction_close_icon" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/select_photo_way" />
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/activity_interact.xml -->

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="bottom_select">#4a4a4a</color>
+    <color name="bottom_tab_line_select">#00ff00</color>
+    <color name="bottom_tab_tx_select">#AAFF00</color>
+    <color name="bottom_tab_line_normal">#646464</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="result_view">#b0000000</color>
+    <color name="BLACK">#000000</color>
+    <color name="BLUE">#00bfff</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="BTN_PRESS">#343434</color>
+    <color name="divider_color">#66666666</color>
+    <color name="GRAY">#d0d0d0</color>
+    <color name="LIGHTER_GRAY">#F2F2F2</color>
+    <color name="DARK_WHITE">#FeFeFe</color>
+    <color name="conversation_normal">#FFFFFF</color>
+    <color name="conversation_pressed">#F2F2F2</color>
+    <color name="GREEN">#00FF00</color>
+    <color name="tahiti_basic_tx_color">#00FF00</color>
+
+    <color name="basic_bg_color">#34b87f</color>
+    <color name="basic_list_spliter">#dadada</color>
+
+    <color name="tab_name_unselected">#999999</color>
+    <color name="tab_name_selected">#34b87f</color>
+
+    <color name="search_input_hint">#9b9b9b</color>
+
+    <color name="block_spliter_bg">#f5f5f5</color>
+    <color name="bottom_tab_bg">#fcfcfc</color>
+
+    <color name="list_text_color">#383838</color>
+    <color name="list_text_color_light">#9b9b9b</color>
+    <color name="list_text_color_light_six">#889b9b9b</color>
+    <color name="medicine_list_price_color">#34b87f</color>
+
+    <color name="trans">#33000000</color>
+
+    <color name="trans_reminder_unselect">#22f5f5f5</color>
+
+
+
+</resources>

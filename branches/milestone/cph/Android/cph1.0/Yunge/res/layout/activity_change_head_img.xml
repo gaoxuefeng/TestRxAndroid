@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/img_rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1C21"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/head_ll_left"
+        android:layout_width="120dp"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/nav_back"
+            android:drawablePadding="@dimen/design_12px"
+            android:text="个人主页"
+            android:textColor="#FD2C98"
+            android:textSize="@dimen/text_design_28px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp" >
+
+        <cn.com.ethank.yunge.app.util.XCRoundImageViewByXfermode
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/design_135px" />
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/screenshot_img"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="matrix" />
+
+            <ImageView
+                android:id="@+id/screenshot"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:adjustViewBounds="true"
+                android:src="@drawable/oval" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/head_but_img"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/login_shape"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="更换头像"
+        android:textColor="#66B5B7BF"
+        android:textSize="@dimen/text_design_24px" />
+
+</RelativeLayout>

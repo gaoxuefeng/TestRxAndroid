@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile project(':yunge_library_pull')
+    compile project(':social_lib')
+    compile project(':xutils_library')
+    compile project(':CoyoteLib')
+    compile project(':umengUpdate')
+    compile project(':wheel')
+    compile project(':viewpagerhelplibrary')
+}
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "19.0.0"
+
+defaultConfig {
+    //应用的包名
+    applicationId "cn.com.ethank.yunge"
+    minSdkVersion="14"
+    targetSdkVersion="20"
+    versionCode="2"
+    versionName="1.0.1"
+}
+
+signingConfigs {
+        releaseConfig {
+            keyAlias 'ethank'
+            keyPassword 'ethankandroid2015'
+            storeFile file('./svn_dir/ethankwireless.keystore')
+            storePassword 'ethankandroid2015'
+        }
+    }
+ buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+            proguardFile 'proguard.cfg'
+           }
+        }
+
+//java版本
+complieOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+}
+
+sourceSets {
+    main {
+        manifest.srcFile 'AndroidManifest.xml'
+        java.srcDirs = ['src']
+        resources.srcDirs = ['src']
+        aidl.srcDirs = ['src']
+        renderscript.srcDirs = ['src']
+        res.srcDirs = ['res']
+        assets.srcDirs = ['assets']
+    }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}
