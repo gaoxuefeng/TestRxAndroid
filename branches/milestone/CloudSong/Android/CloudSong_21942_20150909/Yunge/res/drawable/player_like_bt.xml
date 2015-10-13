@@ -1,0 +1,10 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/player_unlike_btn"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@drawable/player_like_btn"
+        android:maxLevel="1"/>
+
+</level-list>

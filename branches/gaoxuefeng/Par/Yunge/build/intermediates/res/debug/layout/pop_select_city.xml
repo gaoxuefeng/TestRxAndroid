@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#000" />
+
+    <ScrollView
+        android:id="@+id/sv_pop_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f00" >
+
+        <cn.com.ethank.yunge.view.MyGridView
+            android:id="@+id/gv_city_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#251e3b"
+            android:horizontalSpacing="12dp"
+            android:listSelector="#00ffffff"
+            android:numColumns="3"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:verticalSpacing="12dp" >
+        </cn.com.ethank.yunge.view.MyGridView>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/pop_select_city.xml -->

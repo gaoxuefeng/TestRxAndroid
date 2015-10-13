@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1d1c21" >
+
+    <RelativeLayout
+        android:id="@+id/userinfo_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#222126" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submittitlebg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/userinfocontent_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/username_tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/username_icon"
+                    android:text=" 保罗沃克"
+                    android:textColor="#afb7bf"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/usertele_tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/username_tv_id"
+                    android:drawableLeft="@drawable/teleicon"
+                    android:text=" 18611759860"
+                    android:textColor="#afb7bf"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/useraddress_tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/username_tv_id"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="北京朝阳区望京西路48号天平座KTV-1605"
+                    android:textColor="#7b7b79"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/botttom_paylayout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#151417"
+        android:paddingLeft="15dp" >
+
+        <TextView
+            android:id="@+id/tv_totalright_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="合计：¥0"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_pay_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/text_bg"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="立即下单"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orderpaytype_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/botttom_paylayout_id"
+        android:background="#222126" >
+
+        <TextView
+            android:id="@+id/orderpaytype_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/submitline"
+            android:text=" 支付方式"
+            android:textColor="#4d4e54"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/line4_id"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/orderpaytype_id"
+            android:background="#1d1c21" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line4_id"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/apaylayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/apay_iv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/alipayicon" />
+
+                <TextView
+                    android:id="@+id/alipaytv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/apay_iv_id"
+                    android:text="支付宝客户端支付"
+                    android:textColor="#b5b7b0"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alipaytv_id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/apay_iv_id"
+                    android:text="推荐有支付宝账户的用户使用"
+                    android:textColor="#7b7b79"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/alipaychenk_iv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/paytypecheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/weichatlayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/weichat_iv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/wechaticon" />
+
+                <TextView
+                    android:id="@+id/wechattv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/weichat_iv_id"
+                    android:text="微信支付"
+                    android:textColor="#b5b7b0"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wechattv_id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/weichat_iv_id"
+                    android:text="推荐有微信账户的用户使用"
+                    android:textColor="#7b7b79"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/wechatchenk_iv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/paytypenocheck" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line4_id"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_above="@id/orderpaytype_layout_id"
+        android:background="#1d1c21" />
+
+    <TextView
+        android:id="@+id/line3_id"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/userinfo_layout_id"
+        android:background="#1d1c21" />
+
+    <ScrollView
+        android:id="@+id/submitcontent_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/line4_id"
+        android:layout_below="@id/line3_id" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ordercontent_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#222126" >
+
+                <TextView
+                    android:id="@+id/orderinfo_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/submitline"
+                    android:text=" 订单信息"
+                    android:textColor="#4d4e54"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ordernum_tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="共7件"
+                    android:textColor="#4d4e54"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/line2_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/orderinfo_id"
+                    android:background="#1d1c21" />
+
+                <cn.com.ethank.yunge.view.MyListView
+                    android:id="@+id/typelistview_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@id/line2_id"
+                    android:layout_marginLeft="15dp"
+                    android:divider="#1d1c21"
+                    android:dividerHeight="1dp"
+                    android:listSelector="#00000000" >
+                </cn.com.ethank.yunge.view.MyListView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

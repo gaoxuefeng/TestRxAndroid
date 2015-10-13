@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">潮趴汇</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_first">预订</string>
+    <string name="tab_song">点歌</string>
+    <string name="tab_second">遥控</string>
+    <string name="tab_third">发现</string>
+    <string name="tab_forth">我的</string>
+    <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+
+    <string-array name="face">
+        <item>mofaface1.gif</item>
+        <item>mofaface2.gif</item>
+        <item>mofaface3.gif</item>
+    </string-array>
+    <string-array name="age">
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+    </string-array>
+    <string-array name="pre_times">
+        <item>1小时</item>
+        <item>2小时</item>
+        <item>3小时</item>
+        <item>4小时</item>
+        <item>5小时</item>
+        <item>6小时</item>
+        <item>7小时</item>
+        <item>8小时</item>
+    </string-array>
+    <string-array name="pre_hours">
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+    </string-array>
+    <string-array name="pre_index">
+        <item></item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>二十一</item>
+        <item>二十二</item>
+        <item>二十三</item>
+        <item>二十四</item>
+        <item>二十</item>
+    </string-array>
+
+    <string name="cancel">取消</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_position_holder">this is home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_order_list">OrderListActivity</string>
+    <string name="ktv_order_title">KTV预订</string>
+    <string name="tab_name_city">北京</string>
+    <string name="tab_nearby">全城</string>
+    <string name="tab_order">智能排序</string>
+    <string name="title_activity_choose_city">ChooseCityActivity</string>
+    <string name="search_change_city_hint">搜索城市或地点</string>
+    <string name="city_header">A</string>
+    <string name="input_city_name">搜索城市或地点</string>
+    <string name="fgsong_demand_song">点歌台</string>
+    <string name="fgsong_demanded">已点歌曲</string>
+    <string name="fgsong_recorded">已录歌曲</string>
+    <string name="fgsong_finished">历史点歌</string>
+    <string name="title_singger">歌星</string>
+    <string name="title_langue">语种</string>
+    <string name="title_type">分类</string>
+    <string name="title_new_song">新歌</string>
+    <string name="title_top">热榜</string>
+    <string name="title_activity_singgers_actvity">SinggersActvity</string>
+    <string name="title_activity_language">LanguageActivity</string>
+    <string name="title_activity_type">TypeActivity</string>
+    <string name="title_activity_new_songs">NewSongsActivity</string>
+    <string name="title_activity_hot_songs">HotSongsActivity</string>
+    <string name="title_activity_song_list">SongListActivity</string>
+    <string name="title_activity_dermand_base">DermandBaseActivity</string>
+    <string name="title_activity_search_song">歌曲搜索</string>
+    <string name="title_activity_lib_test">LibTestActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_singler_list">SinglerListActivity</string>
+    <!-- 遥控器 -->
+    <string name="change_song">切歌</string>
+    <string name="catering">餐点酒水</string>
+    <string name="shoppingcar_isempty">购物车是空的</string>
+    <string name="title_activity_song_list_search_by_singer">SongListSearchBySingerActivity</string>
+    <string name="title_activity_sing_together">SingTogetherActivity</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="app_tip">提示</string>
+    <string name="title_activity_interact">互动</string>
+    <string name="title_activity_send_emotion">发送表情</string>
+    <!-- 应用市场渠道 -->
+
+
+    <!-- 官方下载 -->
+    <string name="ethank_apk">ethank</string>
+    <!-- 应用宝 -->
+    <string name="tencent_store">tencent</string>
+    <!-- 360移动开放平台 -->
+    <string name="mobile360_store">mobile360</string>
+    <!-- 华为开发者联盟 -->
+    <string name="huawei_store">huawei</string>
+
+    <!-- 魅族开放平台 -->
+    <string name="meizu_store">meizu</string>
+    <!-- 豌豆荚 -->
+    <string name="wandoujia_store">wandoujia</string>
+    <!-- 小米 -->
+    <string name="xiaomi_store">xiaomi</string>
+    <!-- 百度 -->
+    <string name="baidu_store">baidu</string>
+    <!-- N多网 -->
+    <string name="nduowang_store">nduowang</string>
+    <!-- 冒泡堂 -->
+    <string name="maopaotang_store">maopaotang</string>
+    <!-- 连通沃商店 -->
+    <string name="liantong_store">liantong</string>
+    <!-- 机锋市场 -->
+    <string name="jifeng_store">jifeng</string>
+    <!-- 木蚂蚁开发者平台 -->
+    <string name="mumayi_store">mumayi</string>
+    <!-- 优亿市场 -->
+    <string name="youyi_store">youyi</string>
+    <!-- PP应用市场 -->
+    <string name="ppuc_store">ppuc</string>
+
+</resources>

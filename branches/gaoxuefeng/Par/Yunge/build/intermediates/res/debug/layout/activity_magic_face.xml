@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepager_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_118px"
+        android:background="#16152b" >
+
+        <TextView
+            android:id="@+id/room_tv_left"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/design_30px"
+            android:clickable="true"
+            android:drawableLeft="@drawable/nav_back_white"
+            android:drawablePadding="@dimen/design_12px"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_design_28px" />
+
+        <TextView
+            android:id="@+id/room_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#BBFFFFFF"
+            android:textSize="@dimen/text_design_36px" />
+    </RelativeLayout>
+
+    <GridView 
+        android:id="@+id/magic_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:numColumns="3"
+        android:listSelector="@color/transparent"
+        >
+   </GridView>
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/activity_magic_face.xml -->

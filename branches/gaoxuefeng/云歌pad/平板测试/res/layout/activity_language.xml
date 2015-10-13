@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_language"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="55" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="430"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_chinese_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="470"
+                    android:background="@drawable/song_language_img_1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" />
+
+                <ImageView
+                    android:id="@+id/iv_Korean_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="240"
+                    android:background="@drawable/song_language_4" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" />
+
+                <ImageView
+                    android:id="@+id/iv_Japanese_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="240"
+                    android:background="@drawable/song_language_img_6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="30" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="510"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_Cantonese_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="220"
+                    android:background="@drawable/song_language_img_2" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" />
+
+                <ImageView
+                    android:id="@+id/iv_Taiwanese_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="220"
+                    android:background="@drawable/song_language_img_3" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" />
+
+                <ImageView
+                    android:id="@+id/iv_English_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="240"
+                    android:background="@drawable/song_language_img_5" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="30" />
+
+                <ImageView
+                    android:id="@+id/iv_Other_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="240"
+                    android:background="@drawable/song_language_img_7" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="55" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

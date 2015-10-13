@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="cn.com.ethank.yunge.app.search.OrderListActivity" >
+
+    <com.coyotelib.app.ui.widget.BasicTitle
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/alphe6white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <cn.com.ethank.yunge.app.search.SearchTabView
+            android:id="@+id/tab_choose_tx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true" >
+        </cn.com.ethank.yunge.app.search.SearchTabView>
+
+        <!-- <View style="@style/BlackVerSpliter" /> -->
+
+        <cn.com.ethank.yunge.app.search.SearchTabView
+            android:id="@+id/tab_nearby"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true" >
+        </cn.com.ethank.yunge.app.search.SearchTabView>
+
+        <!-- <View style="@style/BlackVerSpliter" /> -->
+
+        <cn.com.ethank.yunge.app.search.SearchTabView
+            android:id="@+id/tab_order"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true" >
+        </cn.com.ethank.yunge.app.search.SearchTabView>
+    </LinearLayout>
+
+    <!-- <View style="@style/BlackHonSpliter" /> -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <cn.com.ethank.yunge.view.NetworkLayout
+            android:id="@+id/network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="gone"/>
+
+        <cn.com.ethank.yunge.view.MyRefreshListView
+            android:id="@+id/mrlv_order_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#0AFFFFFF"
+            android:dividerHeight="1px" >
+        </cn.com.ethank.yunge.view.MyRefreshListView>
+    </FrameLayout>
+
+</LinearLayout>

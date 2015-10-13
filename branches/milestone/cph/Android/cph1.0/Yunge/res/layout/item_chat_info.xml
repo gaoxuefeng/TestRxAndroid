@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/design_28px" >
+
+        <View
+            android:id="@+id/room_view_line1"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/design_32px"
+            android:background="#ffffff" />
+
+        <View
+            android:id="@+id/room_view_line2"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/design_32px"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="@dimen/design_32px"
+            android:src="@drawable/blue" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="@dimen/design_30px"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <cn.com.ethank.yunge.app.util.XCRoundImageViewByXfermode
+                android:id="@+id/chat_iv_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/sing_default_head" />
+
+            <TextView
+                android:id="@+id/chat_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_20px"
+                android:gravity="center_vertical"
+                android:text="潮趴汇小助手" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/design_16px"
+            android:background="@drawable/button_code"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/room_tv_active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ccffffff"
+                android:textSize="@dimen/design_24px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

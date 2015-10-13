@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" android:color="#F844A8" />
+    <!-- pressed -->
+    <item android:state_checked="false" android:color="#B5B7BF" />
+    <!-- focused -->
+
+</selector><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/drawable/seletor_title_text_color.xml -->

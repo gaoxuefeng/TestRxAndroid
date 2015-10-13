@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_pop_inittext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/pop_emoticons.xml -->

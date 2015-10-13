@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_emotion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1C21"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/et_send_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"
+            android:gravity="top"
+            android:hint="说点什么吧,点击发送至大荧幕"
+            android:minLines="10"
+            android:padding="@dimen/design_30px"
+            android:textColor="#6A6B70"
+            android:textColorHint="#6A6B70"
+            android:textSize="@dimen/text_design_28px" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_above_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#151517"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_open_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/design_30px"
+            android:src="@drawable/remote_interaction_keyboard_icon" />
+
+        <TextView
+            android:id="@+id/tv_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/design_30px"
+            android:text="0/16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_for_emoticons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height"
+        android:background="#0ff"
+        android:visibility="gone"
+        tools:ignore="Orientation" />
+
+</LinearLayout>

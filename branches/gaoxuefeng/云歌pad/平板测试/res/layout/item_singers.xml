@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/design_30px"
+        android:paddingLeft="@dimen/design_50px"
+        android:paddingTop="@dimen/design_30px" >
+
+        <RelativeLayout
+            android:id="@+id/rl_single"
+            android:layout_width="@dimen/design_100px"
+            android:layout_height="match_parent" >
+
+            <cn.com.ethank.yunge.pad.view.XCRoundImageViewByXfermode
+                android:id="@+id/iv_single"
+                android:layout_width="@dimen/design_100px"
+                android:layout_height="@dimen/design_100px"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/rl_single"
+            android:layout_alignTop="@id/rl_single"
+            android:layout_marginLeft="@dimen/design_50px"
+            android:layout_toRightOf="@id/rl_single"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_singler_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="筷子兄弟"
+                android:textColor="#B1FFFFFF"
+                android:textSize="@dimen/text_design_42px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

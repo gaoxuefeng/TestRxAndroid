@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_bg_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/contentlayout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/botttom_layout_id"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/addsumshoppingcarlayout_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-1dp"
+            android:visibility="visible" >
+
+            <include
+                android:id="@+id/carbar_id"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="15dp"
+                layout="@layout/layout_catering_carnum" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carbar_id"
+                android:background="@drawable/shoppingcartitlebg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="已选菜单 "
+                    android:textColor="#464b54"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_clearcar_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/clearshoppingcar_icon"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text=" 清理购物车 "
+                    android:textColor="#464b54"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <cn.com.ethank.yunge.view.ScrollListView
+            android:id="@+id/listview_shoppingcarlist_id"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#1d1c21"
+            android:divider="#19181c"
+            android:dividerHeight="1dp" >
+        </cn.com.ethank.yunge.view.ScrollListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/botttom_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#151417" >
+
+        <TextView
+            android:id="@+id/tv_total_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="40dp"
+            android:text="合计：¥0"
+            android:textColor="@color/WHITE"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_pay_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/text_bg"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="立即下单"
+            android:textColor="@color/WHITE"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

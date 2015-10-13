@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:background="@drawable/dialog_shape"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:lines="3"
+        android:maxEms="15"
+        android:text="动态密码已发送至您的手机，为了您的账号安全，登录后请及时修改密码，感谢您对潮趴汇的支持！"
+        android:textColor="@color/BLACK"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#55000000" />
+
+    <Button
+        android:id="@+id/but_pwd_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/transparent"
+        android:text="确定"
+        android:textColor="@color/BLUE" />
+
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/pop_get_pwd.xml -->

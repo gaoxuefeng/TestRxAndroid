@@ -1,0 +1,11 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/room_romate"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@drawable/room_remote_disabled_button"
+        android:maxLevel="1"/>
+   
+
+</level-list><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/drawable/room_romate.xml -->

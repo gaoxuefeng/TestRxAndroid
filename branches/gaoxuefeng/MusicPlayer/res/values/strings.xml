@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">音乐播放</string>
+    <string name="menu_settings">系统设置</string>
+    <string  name="btn_scan_ok">扫描歌曲</string>
+    <string  name="btn_scan_add">添加目录</string>
+    <string  name="menu_scan_txt">扫描歌曲</string>
+    <string name="menu_time_txt">定时关闭</string>
+    <string name="menu_exit_txt">退出</string>
+    <string name="create_list_txt">新建列表</string>
+     <string name="btn_san_directory_add">添加</string>
+    <string name="btn_san_directory_back">返回</string>
+    <string  name="confrim">确定</string>
+    <string  name="cancel">取消</string>
+     <string name="scan_title">扫描歌曲</string>
+     <string  name="skin_settings">皮肤设置</string>
+     <string name="no_lrc_messenge">未找到歌词</string>
+     <string  name="about_title">关于</string>
+     <string name="about_message">作者:涙星(eoeID)/烟熏的藏身处(巴士ID)\n,简要介绍:本播放器有基本功能，如基本播放+一些小功能，包括读歌词和读取专辑等。本作是前面几个版本强化。主要强化了后台播放功能</string>
+   <string  name="info">操作:</string>
+   <string name="dialog_messenge">你确定要退出程序吗？</string>
+   <string name="music_info">歌曲详细信息:</string>
+   <string name="opertion_file">将此文件处理为:</string>
+   <string  name="brightness_title">日照模式</string>
+   <string name="darkness_title">夜晚模式</string>
+   <string name="scan_titles">扫描歌曲</string>
+</resources>

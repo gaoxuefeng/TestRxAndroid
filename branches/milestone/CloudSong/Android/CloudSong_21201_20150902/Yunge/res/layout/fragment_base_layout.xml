@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.coyotelib.app.ui.widget.BasicTitle
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_main_bg"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/fl_base_content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <cn.com.ethank.yunge.view.NetworkLayout
+        android:id="@+id/netlv_networkerror_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+    </cn.com.ethank.yunge.view.NetworkLayout>
+
+</RelativeLayout>

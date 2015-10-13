@@ -1,0 +1,22 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/remote_dynamic_bg"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@drawable/remote_romantic_bg"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@drawable/remote_light_bg"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@drawable/remote_gentle_bg"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@drawable/remote_business_bg"
+        android:maxLevel="4"/>
+    <item
+        android:drawable="@drawable/remote_lyric_bg"
+        android:maxLevel="5"/>
+
+</level-list><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/drawable/image_view.xml -->

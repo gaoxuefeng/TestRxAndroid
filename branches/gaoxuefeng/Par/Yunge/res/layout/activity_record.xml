@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1d1c21"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_head_title" />
+
+    <cn.com.ethank.yunge.view.MyRefreshGridView
+        android:id="@+id/mrfg_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:scrollbars="none"
+        android:layout_marginLeft="@dimen/design_10px"
+        android:layout_marginRight="@dimen/design_10px"
+        android:layout_marginTop="@dimen/design_12px"
+        android:background="#1a1a1e" >
+    </cn.com.ethank.yunge.view.MyRefreshGridView>
+
+</LinearLayout>

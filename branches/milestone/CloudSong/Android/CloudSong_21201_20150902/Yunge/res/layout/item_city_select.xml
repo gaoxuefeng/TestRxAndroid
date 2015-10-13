@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_city_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="#524582"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="北京"
+        android:textColor="#FFF"
+        android:textSize="@dimen/text_design_22px" />
+
+</LinearLayout>

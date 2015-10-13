@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_item_song"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_single"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginRight="8dp" >
+
+            <TextView
+                android:id="@+id/tv_song_num"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:alpha="0.3"
+                android:gravity="center"
+                android:minWidth="45dp"
+                android:scaleType="centerCrop"
+                android:singleLine="true"
+                android:src="@drawable/default_head_icon"
+                android:text="01"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_design_24px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_demand_song"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:minWidth="100dp" >
+
+            <TextView
+                android:id="@+id/tv_demand_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_denamd_song"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/rl_single"
+            android:layout_alignTop="@id/rl_single"
+            android:layout_toLeftOf="@id/rl_demand_song"
+            android:layout_toRightOf="@id/rl_single"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:id="@+id/tv_music_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="小苹果"
+                android:textColor="@color/text_color_song_name"
+                android:textSize="@dimen/text_design_28px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_music_singler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="国语-"
+                    android:textColor="@color/text_color_song_singlename"
+                    android:textSize="@dimen/text_design_20px" />
+
+                <TextView
+                    android:id="@+id/tv_music_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="筷子兄弟"
+                    android:textColor="@color/text_color_song_singlename"
+                    android:textSize="@dimen/text_design_20px" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/listview_divider"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.coyotelib.app.ui.widget.HAWebView
+            android:id="@+id/result_detail_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.coyotelib.app.ui.widget.HAWebView>
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/CoyoteLib/res/layout/basicwebview.xml --><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/CoyoteLib/build/intermediates/bundles/debug/res/layout/basicwebview.xml -->

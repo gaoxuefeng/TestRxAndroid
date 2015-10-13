@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    name="custom_rules"
+    default="release" >
+
+    <target name="-pre-compile" >
+
+        <echo message="JARPATH=${toString:project.all.jars.path}" >
+        </echo>
+
+        <property
+            name="ormlite.dir"
+            value="${jar.libs.dir}/ormlite" >
+        </property>
+
+        <path id="ormlite.lib" >
+
+            <path path="${toString:project.all.jars.path}" >
+            </path>
+
+            <pathelement location="/Users/ethankqa/Desktop/svn_dir/social_sdk_library_project/libs/android-support-v4.jar" >
+            </pathelement>
+        </path>
+
+        <path id="project.all.jars.path" >
+
+            <path refid="ormlite.lib" >
+            </path>
+        </path>
+
+        <echo message="JARPATH=${toString:project.all.jars.path}" >
+        </echo>
+    </target>
+
+</project>

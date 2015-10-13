@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.ethank.yunge"
+    android:versionCode="1"
+    android:versionName="1.0.0手机" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Baidu定位权限 -->
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <!-- 扫描二维码权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 自动聚焦权限 -->
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </permission>
+
+    <!-- ###################友盟分享声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 极光推送 权限 -->
+    <permission
+        android:name="cn.com.ethank.yunge.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="cn.com.ethank.yunge.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 激光推送 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".app.startup.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launch"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="554c75f467e58eeb76000144" >
+        </meta-data>
+
+        <activity
+            android:name=".app.startup.MainTabActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <!-- 第三方登陆分享接口 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 微博 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+        <!-- 微信回调activity -->
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".app.search.OrderListActivity" />
+        <activity
+            android:name=".app.search.city.ChooseCityActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".app.demandsongs.activity.SingerTypeActvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.SinglerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.SongListByLanguageTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.TypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.NewSongsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.HotSongsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.SongListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.remotecontrol.lightcontrol.LightControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.ThemeSongListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.ethank.yunge.app.startup.BaseTitleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.SongListBySongTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.demandsongs.activity.searchsong.SearchSongActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".app.demandsongs.activity.LibTestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".app.user.LoginActivity" >
+        </activity>
+        <activity android:name=".app.user.UserInfoActivity" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".app.mine.activity.ServiceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".app.mine.activity.AutographActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.PartInActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.MyRecord"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.BoundPhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.HeadImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.SongHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.WhatIsUpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.catering.activity.MenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.ChangeHeadImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.UserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.LoveSingersActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.catering.activity.SubmitOrderActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx5c07842a8d88f1ca" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.mine.activity.PeopleHomePageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.MyBoxActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.InfoEditorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.ModifyPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.OpinionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.ConsumeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.LoveSongsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.MerchantDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.WebMerchantDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.room.activity.RoomCodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.BoxDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.OrderFormActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx5c07842a8d88f1ca" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.home.activity.ConsumeDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.BillDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.BoxPredeterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.CompartmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.MyWheelView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.mine.activity.SupermarketDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.ChargeBackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.home.activity.InviteFriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name=".app.net.NetworkChangedReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="69jxcMc0zBcSN2eiwldo8tRg" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action
+                    android:name="com.baidu.location.service"
+                    android:exported="false" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".app.demandsongs.activity.SongListSearchBySingerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.remotecontrol.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.demandsongs.activity.SingTogetherActivity"
+            android:label="@string/title_activity_sing_together"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".app.discover.activity.AudioPlayerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".app.discover.service.AudioService" />
+
+        <!-- ###################友盟分享注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- jpush 推送 -->
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="cn.com.ethank.yunge" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".app.startup.MyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="cn.com.ethank.yunge" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cn.com.ethank.yunge.app.startup.SelfMessageReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.com.ethank.yunge.MESSAGE_RECEIVED_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="953a59c7b9228c5c530b737e" />
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cn.com.ethank.yunge" />
+            </intent-filter>
+        </activity>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+
+
+        <!-- WEIXIN sdk begin -->
+        <activity
+            android:name="cn.com.ethank.yunge.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="net.sourceforge.simcpux.AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- WEIXIN sdk end -->
+        <!-- 友盟更新 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".app.remotecontrol.interactcontrl.InteractActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Dialog" >
+        </activity>
+        <activity
+            android:name=".app.remotecontrol.interactcontrl.SendEmotionActivity"
+            android:label="@string/title_activity_send_emotion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".app.remotecontrol.interactcontrl.SendTextActivity"
+            android:label="@string/title_activity_send_emotion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".app.remotecontrol.interactcontrl.SendPictureActivity"
+            android:label="@string/title_activity_send_emotion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".app.remotecontrol.interactcontrl.DrawHraffitiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.ethank.yunge.app.homepager.HomePagerByTypeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.ethank.yunge.app.homepager.WebWithTitleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.ethank.yunge.app.homepager.ActivityWebWithTitleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.ethank.yunge.app.remotecontrol.RemoteControlActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.ethank.yunge.app.demandsongs.DemandSongsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.ethank.yunge.app.startup.LoadingActivity"
+            android:screenOrientation="portrait" >
+           <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        <activity
+            android:name="cn.com.ethank.yunge.app.mine.activity.MyRecordXin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.ethank.yunge.app.mine.activity.MyRoomActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.ethank.yunge.app.mine.activity.MapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.coyotelib.app.crash.BugReportActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

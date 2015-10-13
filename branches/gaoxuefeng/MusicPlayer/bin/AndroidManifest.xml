@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.app.musicplayer"
+    android:versionCode="2"
+    android:installLocation="preferExternal"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <!-- 完全访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+     <!-- 允许访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 允许访问SD卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+     <!-- 允许程序读取或写入系统设置 -->
+      <!-- 允许使用PowerManager的 WakeLocks保持进程在休眠时从屏幕消失 -->
+     <uses-permission android:name="android.permission.WAKE_LOCK" />
+     <!-- 允许挂载和反挂载文件系统可移动存储 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许读取手机状态相关数据 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="MainActivity"
+            android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 所有的Activity强制屏幕为竖屏幕，且不带标题 -->
+        <activity android:name="MusicListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            
+        </activity>
+        <activity android:name="FavroiteActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            
+        </activity>
+        <activity android:name="MusicOnlineActivity" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+            
+        </activity>
+        <activity android:name="org.app.musicplayer.SkinSettingActivity" android:theme="@android:style/Theme.Light.NoTitleBar" android:screenOrientation="portrait">
+            
+        </activity>
+        <activity android:name="PlayMusicActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <service android:name="org.app.music.service.MusicService">
+             <intent-filter>
+                <action android:name="com.app.media.MUSIC_SERVICE" />
+            </intent-filter>
+        </service>
+        <activity android:name="AboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Animation.Dialog"></activity>
+        <receiver android:name="AppWidget">
+            <meta-data android:name="android.appwidget.provider"
+        				android:resource="@xml/appwidgetprovider"/>
+        	<intent-filter>
+        	    <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            	<action android:name="com.app.playmusic"></action>
+            	<action android:name="com.app.pause"></action>
+            	<action android:name="com.app.play"></action>
+            	<action android:name="com.app.musictitle"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

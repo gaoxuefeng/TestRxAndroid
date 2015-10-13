@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_20px"
+        android:background="@color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#0cffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/bg_color"
+        android:layout_height="@dimen/design_78px" >
+
+        <TextView
+            android:id="@+id/tab_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_78px"
+            android:layout_marginLeft="@dimen/design_24px"
+            android:gravity="center_vertical"
+            android:text="宝乐迪量贩KTV九棵树店"
+            android:textColor="#9799A2"
+            android:textSize="@dimen/text_design_28px" />
+        
+        <TextView 
+            android:id="@+id/tab_tv_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/design_40px"
+            android:visibility="gone"
+            android:textSize="@dimen/design_22px"
+            android:text="未支付"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_112px"
+        android:background="@color/bg_color" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/design_112px"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tab_tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:gravity="center_vertical"
+                android:text="05-27(周三)"
+                android:textColor="#809799a2"
+                android:textSize="@dimen/text_design_28px" />
+
+            <TextView
+                android:id="@+id/tab_tv_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:layout_marginTop="@dimen/design_20px"
+                android:text="21:00至00:00"
+                android:textColor="#809799a2"
+                android:textSize="@dimen/design_28px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/consume_tv_pay_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/design_40px"
+            android:text="待支付"
+            android:textColor="#f03da2"
+            android:textSize="@dimen/design_26px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color" />
+
+</LinearLayout>

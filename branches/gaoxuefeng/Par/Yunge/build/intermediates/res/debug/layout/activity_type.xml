@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    
+    <ListView
+        android:id="@+id/gv_music_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#00FFFFFF"
+        android:paddingTop="5dp"
+         >
+    </ListView>
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/activity_type.xml -->

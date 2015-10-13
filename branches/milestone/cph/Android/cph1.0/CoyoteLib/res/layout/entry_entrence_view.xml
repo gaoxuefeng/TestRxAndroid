@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BasicListLinearLayoutContainerV"
+    android:paddingTop="16dp"
+    android:paddingBottom="0dp"
+    >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        
+        <ImageView 
+            android:id="@+id/function_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+       		android:layout_gravity="center_vertical"
+       		android:layout_marginRight="16dp"
+            android:background="@drawable/entry_view_default"
+            />
+        
+        <TextView 
+            android:id="@+id/function_title"
+            style="@style/SingLineTx"
+            android:textSize="18sp"
+            android:textColor="#353535"/>
+        
+        <ImageView
+            android:id="@+id/new_sign"
+            android:layout_width="34dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="14dp"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_record_list_item_arrow"
+            android:layout_marginRight="16dp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/BasicHonSpliter"
+        android:layout_marginLeft="34dp"/>
+</LinearLayout>

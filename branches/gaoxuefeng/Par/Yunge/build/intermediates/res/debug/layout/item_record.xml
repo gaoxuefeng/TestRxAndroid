@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#1a1a1e"
+    android:padding="1dp" >
+
+    <ImageView
+        android:id="@+id/record_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/finddefaulticon"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#66000000"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/record_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/design_20px"
+            android:text="愿得一人心"
+            android:textColor="#6d6c7b"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/record_tv_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/design_10px"
+            android:drawableLeft="@drawable/findlisten"
+            android:drawablePadding="@dimen/design_8px"
+            android:gravity="right"
+            android:text="8"
+            android:textColor="#747477"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/record_tv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/design_30px"
+            android:layout_toLeftOf="@id/record_tv_song"
+            android:drawableLeft="@drawable/findlikeicon"
+            android:drawablePadding="@dimen/design_8px"
+            android:text="15"
+            android:textColor="#747477"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/item_record.xml -->

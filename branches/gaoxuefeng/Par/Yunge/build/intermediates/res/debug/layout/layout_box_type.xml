@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1F1F1F" >
+
+    <ListView
+        android:id="@+id/box_lv_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/timer_selector"
+        android:background="#1F1F1F"
+        android:orientation="vertical" >
+    </ListView>
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/layout_box_type.xml -->

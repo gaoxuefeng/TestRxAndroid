@@ -1,0 +1,294 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/room_rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/room_bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/design_118px"
+        android:background="@color/share"
+        android:paddingBottom="114dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/room_rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_118px"
+        android:background="#241938" >
+
+        <LinearLayout
+            android:id="@+id/room_ll_code"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:gravity="center_vertical"
+                android:src="@drawable/room_qr_code_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/room_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="房间"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_design_32px" />
+
+        <RelativeLayout
+            android:id="@+id/room_rl_friend"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/design_30px" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:text="邀请好友"
+                android:textColor="#ccffffff"
+                android:textSize="@dimen/text_design_26px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:id="@+id/rl_room_demandsong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/room_selectsong" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_room_remote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/rl_iv_remote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/carting_iv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/room_market_button" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/room_ll_send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_80px"
+            android:layout_gravity="bottom"
+            android:background="#472d6e"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/room_et_send"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/design_16px"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/send_text"
+                android:clickable="false"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:hint="发送文字到屏幕，鼓励下唱歌的小伙伴吧~"
+                android:padding="@dimen/design_16px"
+                android:paddingLeft="@dimen/design_16px"
+                android:textColor="#4cffffff"
+                android:textSize="@dimen/design_24px" />
+
+            <TextView
+                android:id="@+id/room_iv_click"
+                android:layout_width="@dimen/design_50px"
+                android:layout_height="@dimen/design_50px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/design_16px"
+                android:layout_marginRight="@dimen/design_16px"
+                android:background="@drawable/room_add_icon"
+                android:clickable="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:textColor="#44ffffff"
+                android:textSize="@dimen/design_22px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/room_ll_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_174px"
+            android:background="#472d6e"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/room_tv_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/design_40px"
+                android:drawablePadding="@dimen/design_10px"
+                android:drawableTop="@drawable/room_magicexpression_button"
+                android:text="魔法表情"
+                android:textColor="#b3ffffff"
+                android:textSize="@dimen/design_22px" />
+
+            <TextView
+                android:id="@+id/room_tv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/design_80px"
+                android:drawablePadding="@dimen/design_10px"
+                android:drawableTop="@drawable/room_album_button"
+                android:text="相册图片"
+                android:textColor="#b3ffffff"
+                android:textSize="@dimen/design_22px" />
+
+            <TextView
+                android:id="@+id/room_tv_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/design_80px"
+                android:drawablePadding="@dimen/design_10px"
+                android:drawableTop="@drawable/room_graffiti_button"
+                android:text="趣味涂鸦"
+                android:textColor="#b3ffffff"
+                android:textSize="@dimen/design_22px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/room_ll_song"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_88px"
+        android:layout_below="@id/room_rl_head"
+        android:alpha="0.7"
+        android:background="#09ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/hscroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_design_20px"
+                    android:background="@drawable/room_title_music" />
+
+                <TextView
+                    android:id="@+id/tv_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_design_20px"
+                    android:text="正在播放："
+                    android:textColor="#4CFFFFFF"
+                    android:textSize="@dimen/text_design_22px" />
+
+                <TextView
+                    android:id="@+id/tv_singer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="尹正伟"
+                    android:textColor="#7FFFB400"
+                    android:textSize="@dimen/text_design_22px" />
+
+                <TextView
+                    android:id="@+id/tv_sing_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ( 演唱： 七里香   )"
+                    android:textColor="#4CFFFFFF"
+                    android:textSize="@dimen/text_design_22px" />
+
+                <TextView
+                    android:id="@+id/tv_next_sing_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_design_24px"
+                    android:focusable="true"
+                    android:text="下一首： 夜空中最亮的星"
+                    android:textColor="#4CFFFFFF"
+                    android:textSize="@dimen/text_design_22px" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#4c000000" />
+
+    <ListView
+        android:id="@+id/room_lv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_bottom_layout"
+        android:layout_below="@id/room_ll_song"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

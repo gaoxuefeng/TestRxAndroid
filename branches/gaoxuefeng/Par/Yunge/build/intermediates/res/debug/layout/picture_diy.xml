@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070709" >
+
+    <TextView
+        android:id="@+id/mag_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_ducks"
+        android:background="#070709" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ducks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <cn.com.ethank.yunge.app.remotecontrol.interactcontrl.DrawPictureView
+            android:id="@+id/mdp_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_edit_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rl_ducks"
+        android:gravity="center" >
+
+        <include
+            android:id="@+id/layout_select_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_select_color"
+            android:visibility="gone" >
+        </include>
+
+        <include
+            android:id="@+id/layout_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_change_setting"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/layout_thickness"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_thickness"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/bt_exit_duck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/design_10px"
+            android:background="#00000000"
+            android:padding="@dimen/design_30px"
+            android:text="退出涂鸦"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_design_30px" />
+
+        <Button
+            android:id="@+id/bt_send_duck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/design_10px"
+            android:background="#00000000"
+            android:padding="@dimen/design_30px"
+            android:text="创作完成"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_design_30px" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/picture_diy.xml -->

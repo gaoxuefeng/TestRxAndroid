@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">云歌</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_tab_activity">TabActivityA</string>
+    <string name="title_activity_tab_activity_b">预定KTV</string>
+    <string name="title_activity_tab_activity_a">KTV点歌</string>
+    <string name="title_activity_tab_activity_c">发现</string>
+    <string name="title_activity_tab_activity_d">我的</string>
+    <string name="title_activity_tab_c">TabCActivity</string>
+    <string name="finish_application">再按一次返回键退出程序！</string>
+    <string name="title_activity_singles">SinglesActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_single">SingleActivity</string>
+    <string name="title_activity_top">TopActivity</string>
+
+</resources>

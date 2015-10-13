@@ -1,0 +1,68 @@
+package cn.com.ethank.yunge.pad.view;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.Toast;
+
+import com.handmark.pulltorefresh.library.PullToRefreshGridView;
+
+public class MyRefreshGridView extends PullToRefreshGridView {
+
+	protected Mode defaultMode;
+
+	public MyRefreshGridView(Context context, com.handmark.pulltorefresh.library.PullToRefreshBase.Mode mode,
+			com.handmark.pulltorefresh.library.PullToRefreshBase.AnimationStyle style) {
+		super(context, mode, style);
+		initView(context);
+	}
+
+	public MyRefreshGridView(Context context, com.handmark.pulltorefresh.library.PullToRefreshBase.Mode mode) {
+		super(context, mode);
+		initView(context);
+	}
+
+	public MyRefreshGridView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		initView(context);
+	}
+
+	public MyRefreshGridView(final Context context) {
+		super(context);
+
+		initView(context);
+	}
+
+	private void initView(final Context context) {
+		setMode(Mode.MANUAL_REFRESH_ONLY);
+		this.setPullToRefreshOverScrollEnabled(false);
+		this.setPullToRefreshEnabled(false);
+
+		this.setOnLastItemVisibleListener(new OnLastItemVisibleListener() {
+
+			@Override
+			public void onLastItemVisible() {
+				if (!isRefreshing() && true && (getMode() == Mode.PULL_FROM_END || getMode() == Mode.PULL_UP_TO_REFRESH || getMode() == Mode.BOTH)) {
+					Toast.makeText(context, "End of List!", Toast.LENGTH_SHORT).show();
+					defaultMode = getMode();
+
+					if (getRefreshableView().getFirstVisiblePosition() == 0) {
+						return;
+					}
+					setMode(Mode.PULL_FROM_END);
+					setRefreshing(false);
+				}
+				return;
+			}
+		});
+
+	}
+
+	// 如果Mode为Both则调用这个方法
+	public void refreshComplete() {
+		super.onRefreshComplete();
+		if (defaultMode != null) {
+			setMode(defaultMode);
+		}
+
+	}
+}

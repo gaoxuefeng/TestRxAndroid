@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/design_28px" >
+
+        <View
+            android:id="@+id/img_view_line1"
+            android:layout_width="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/design_32px"
+            android:background="@color/alphe6white" />
+
+        <View
+            android:id="@+id/img_view_line2"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/design_32px"
+            android:layout_centerHorizontal="true"
+            android:background="@color/alphe6white" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="@dimen/design_32px"
+            android:src="@drawable/blue" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/design_30px"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <cn.com.ethank.yunge.app.util.XCRoundImageViewByXfermode
+                android:id="@+id/chat_iv_img1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/sing_default_head" />
+
+            <TextView
+                android:id="@+id/chat_tv_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/design_20px"
+                android:textColor="#66ffffff"
+                android:textSize="@dimen/design_26px"
+                android:gravity="center_vertical"
+                android:text="乔丹娜.波鲁思特" />
+        </LinearLayout>
+
+        <ImageView 
+            android:id="@+id/chat_iv_img2"
+            android:layout_marginTop="20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

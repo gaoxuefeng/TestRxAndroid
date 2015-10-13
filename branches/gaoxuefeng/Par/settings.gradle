@@ -1,0 +1,4 @@
+include ':CoyoteLib', ':social_sdk_library_project', ':viewpagerhelplibrary', ':wheel', ':xutils_library', ':yunge_library_pull', ':Yunge', ':imageloadecubecore'
+include ':umengUpdate'
+
+

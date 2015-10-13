@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BasicListLinearLayoutContainerV"
+    android:background="@color/transparent">
+    
+    <TextView 
+        android:id="@+id/setting_title"
+        style="@style/SingLineTx"
+        android:textSize="14sp"
+        android:textColor="#828282"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="false"
+        />
+
+</LinearLayout>

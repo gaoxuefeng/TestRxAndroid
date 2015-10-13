@@ -1,0 +1,1 @@
+../../../BaiduMapAPI/Framework/BaiduMapAPI.framework/Headers/BMKCloudPOIList.h

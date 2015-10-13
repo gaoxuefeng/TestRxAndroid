@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:background="#999999"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="预订成功"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" />
+
+   <TextView 
+       android:layout_marginTop="5dp"
+       android:layout_width="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:lines="2"
+       android:textColor="#55000000"
+       android:layout_height="wrap_content"
+       android:text="请您合理安排入场时间，到点按小时收费"/>
+    <TextView 
+       android:layout_marginTop="5dp"
+       android:layout_width="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:lines="2"
+       android:textColor="#55000000"
+       android:layout_height="wrap_content"
+       android:text="如临时有变需取消，请至少提前一个小时申请  "/>
+	<View 
+	    android:layout_marginTop="25dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:background="#99000000"/>
+	<Button 
+	    android:id="@+id/success_but"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:text="确定"
+	    android:gravity="center"
+	    android:textColor="#0000ff"
+	    android:background="@null"
+	    android:textSize="18sp"/>
+</LinearLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/pop_reserve_success.xml -->

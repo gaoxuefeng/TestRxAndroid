@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <cn.com.ethank.yunge.view.MyRefreshListView
+        android:id="@+id/mrlv_sing_together"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/listview_divider"
+        android:dividerHeight="0dp" >
+    </cn.com.ethank.yunge.view.MyRefreshListView>
+
+</RelativeLayout><!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/activity_sing_together.xml -->

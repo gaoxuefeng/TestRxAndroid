@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.com.ethank.yunge.view.MyRefreshListView
+        android:id="@+id/mrlv_search_song"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:divider="@color/listview_divider"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:visibility="visible" >
+    </cn.com.ethank.yunge.view.MyRefreshListView>
+
+</RelativeLayout>

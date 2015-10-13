@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1C21"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/design_118px"
+        android:background="#151417" >
+
+        <TextView
+            android:id="@+id/login_tv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/design_30px"
+            android:clickable="true"
+            android:drawableLeft="@drawable/nav_back"
+            android:drawablePadding="@dimen/design_12px"
+            android:enabled="true"
+            android:text="我的"
+            android:textColor="#FD2C98"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人主页"
+            android:textColor="#B5B7BF"
+            android:textSize="@dimen/text_design_36px" />
+
+        <TextView
+            android:id="@+id/people_tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/design_30px"
+            android:drawableLeft="@drawable/home_page_dite_icon"
+            android:drawablePadding="@dimen/design_12px"
+            android:text="编辑"
+            android:textColor="#FD2C98"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#88000000" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/people_iv_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@drawable/home_page_bg" />
+
+                <cn.com.ethank.yunge.app.util.XCRoundImageViewByXfermode
+                    android:id="@+id/people_iv_head"
+                    android:layout_width="@dimen/design_135px"
+                    android:layout_height="@dimen/design_135px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/mine_default_avatar_female"
+                    android:layout_marginLeft="@dimen/design_50px"
+                    android:layout_marginTop="137dp" />
+
+                <TextView
+                    android:id="@+id/people_tv_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/people_iv_bg"
+                    android:layout_marginLeft="@dimen/design_214px"
+                    android:layout_marginTop="@dimen/design_22px"
+                    android:drawablePadding="@dimen/design_18px"
+                    android:textColor="#B5B7BF" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_108px"
+                android:layout_marginTop="@dimen/design_76px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/people_tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/design_40px"
+                    android:gravity="center_vertical"
+                    android:text="性别"
+                    android:textColor="#4D9799A1"
+                    android:textSize="@dimen/text_design_30px" />
+
+                <TextView
+                    android:id="@+id/user_tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/design_22px"
+                    android:gravity="center_vertical"
+                    android:textColor="#B5B7BF"
+                    android:textSize="@dimen/text_design_28px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#4D000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_108px"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/design_40px"
+                        android:gravity="center_vertical"
+                        android:text="年龄"
+                        android:textColor="#4D9799A1"
+                        android:textSize="@dimen/text_design_30px" />
+
+                    <TextView
+                        android:id="@+id/people_tv_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/design_20px"
+                        android:gravity="center_vertical"
+                        android:textColor="#B5B7BF"
+                        android:textSize="@dimen/text_design_28px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/design_202px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="星座"
+                        android:textColor="#4D9799A1"
+                        android:textSize="@dimen/text_design_30px" />
+
+                    <TextView
+                        android:id="@+id/people_tv_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/design_20px"
+                        android:gravity="center_vertical"
+                        android:textColor="#B5B7BF"
+                        android:textSize="@dimen/text_design_28px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/design_42px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="血型"
+                        android:textColor="#4D9799A1"
+                        android:textSize="@dimen/design_30px" />
+
+                    <TextView
+                        android:id="@+id/people_tv_blood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/design_20px"
+                        android:gravity="center_vertical"
+                        android:textColor="#B5B7BF"
+                        android:textSize="@dimen/text_design_28px" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#4D000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/design_42px"
+                    android:layout_marginTop="@dimen/design_40px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="最喜欢的歌手"
+                        android:textColor="#4D9799A1"
+                        android:textSize="@dimen/text_design_30px" />
+
+                    <TextView
+                        android:id="@+id/people_tv_loveSingers"
+                        android:layout_width="147dp"
+                        android:layout_height="@dimen/design_78px"
+                        android:layout_marginLeft="@dimen/design_22px"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0.26"
+                        android:lineSpacingExtra="@dimen/design_22px"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:maxEms="10"
+                        android:textColor="#B5B7BF"
+                        android:textSize="@dimen/design_28px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#4D000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/design_42px"
+                android:layout_marginTop="@dimen/design_40px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="最喜欢的歌曲"
+                    android:textColor="#4D9799A1"
+                    android:textSize="@dimen/text_design_30px" />
+
+                <TextView
+                    android:id="@+id/people_tv_loveSongs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/design_78px"
+                    android:layout_marginLeft="@dimen/design_22px"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingExtra="@dimen/design_22px"
+                    android:lines="2"
+                    android:maxEms="8"
+                    android:ellipsize="end"
+                    android:textColor="#B5B7BF"
+                    android:textSize="@dimen/design_28px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#4D000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/design_118px"
+                android:layout_marginTop="@dimen/design_40px"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="个性签名"
+                    android:textColor="#4D9799A1"
+                    android:textSize="@dimen/design_30px" />
+
+                <TextView
+                    android:id="@+id/people_tv_whatIsUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingExtra="@dimen/design_22px"
+                    android:maxEms="12"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="#B5B7BF"
+                    android:textSize="@dimen/design_28px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+<!-- From: file:/Users/lvhonghe/project/ethank/ethank/trunk/client/yunge/Android/Par/Yunge/res/layout/activity_people_homepage.xml -->

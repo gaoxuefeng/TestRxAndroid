@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.com.ethank.yunge.view.MyRefreshListView
+        android:id="@+id/mrlv_activity_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ffffff"
+        android:divider="#00ffffff"
+        android:dividerHeight="10dp"
+        android:listSelector="#00000000"
+        android:scrollbars="none" >
+    </cn.com.ethank.yunge.view.MyRefreshListView>
+
+</LinearLayout>
